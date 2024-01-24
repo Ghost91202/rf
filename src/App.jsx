@@ -1,24 +1,18 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Home from './conponents/layout/home.jsx'; // Adjust the import path if needed
-
-import About from "./conponents/layout/Aboutpage.jsx"
-import Team from "./conponents/layout/Team.jsx"
-
-
+import Home from './pages/home.jsx'; // Adjust the import path if needed
+import "./App.css"
+import About from "./components/layout/Aboutpage.jsx"
+import Team from "./components/layout/Team.jsx"
 const App = () => {
     return (
         <Router>
-            <Routes className="md:overflow-hidden overflow-hidden w-full">
+            <Routes className="md:overflow-hidden w-screen overflow-hidden">
                 <Route path="/" element={<Home />} />
-
-                <Route path="/About" element={<About/>} />
-                <Route path="/Team" element={<Team/>} />
-
-
+                <Route path="/About" element={<About />} />
+                <Route path="/Team" element={<Team />} />
             </Routes>
         </Router>
     );
 };
-
 export default App;
