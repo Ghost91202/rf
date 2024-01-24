@@ -2,7 +2,7 @@ import React from 'react'
 import Navbar from './navbar.jsx'
 import Hero from './hero.jsx'
 import Services from "./service.jsx"
-// import About from "./About.jsx"
+import About from "../components/layout/About.jsx"
 // import Content from './content.jsx'
 // import Accordians from './accordians.jsx'
 // import Testrimonials from './testimonials'
@@ -20,10 +20,11 @@ const home = () => {
 
             <Navbar />
             <Carousel />
-            {/* <Hero /> */}
+
             <Services />
-            {/* <About />
-            <Content /> */}
+              <Hero />
+            <About />
+            {/* <Content /> */}
 
             {/* <Accordians />
             <Cta /> */}

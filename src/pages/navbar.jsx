@@ -75,7 +75,7 @@ export default function Example( { currentPage } ) {
       }
       id="example-navbar-danger"
     >
-      <ul className="flex  flex-col lg:flex-row list-none lg:ml-auto">
+      <ul className="flex  flex-col lg:flex-row list-none gap-2 lg:ml-auto">
         <li className="nav-item">
           <a
             className="border-r-2 pr-6 py-2 flex items-center text-xl uppercase font-bold leading-snug text-white hover:opacity-75"
@@ -114,14 +114,14 @@ export default function Example( { currentPage } ) {
     </div>
   </div>
 </nav>
-      <Disclosure as="nav" className="backdrop-blur-3xl z-50 bg-white/60 sticky top-0 shadow-lg shadow-gray-300/50">
+      <Disclosure as="nav" className="backdrop-blur-3xl z-50 bg-white/60 sticky top-0  ">
         {( { open } ) => (
           <>
             <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
               <div className="relative flex h-20  items-center justify-center md:justify-between sm:justify-between">
                 <div className="absolute inset-y-0 left-0 flex  items-center sm:hidden">
                   {/* Mobile menu button*/}
-                  <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-900 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                  <Disclosure.Button className="relative inline-flex items-center justify-center p-2 text-gray-900 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                     <span className="absolute -inset-0.5" />
                     <span className="sr-only">Open main menu</span>
                     {open ? (
@@ -148,24 +148,13 @@ export default function Example( { currentPage } ) {
                       <div className="relative inline-block ring-0 border-0 border-transparent text-left group">
                         <button
                           type="button"
-                          className="inline-flex justify-center items-center px-4 py-2  shadow-sm text-sm font-medium rounded-md hover:underline "
+                          className="inline-flex justify-center items-center border-r  border-gray-400 px-4 py-2   text-sm font-medium hover:underline "
                         >
                         About us
-                          <svg
-                            className="-mr-1 ml-2 h-5 w-5 group-hover:text-gray-500"
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 20 20"
-                            fill="currentColor"
-                          >
-                            <path
-                              fillRule="evenodd"
-                              d="M10 8a1 1 0 011 1v5a1 1 0 11-2 0V9a1 1 0 011-1zm-2.707-2.293a1 1 0 011.414 0L10 9.586l1.293-1.293a1 1 0 011.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414 1 1 0 011.414 0L10 9.586 11.293 8.293z"
-                              clipRule="evenodd"
-                            />
-                          </svg>
+
                         </button>
 
-                        <div className="hidden group-hover:block origin-top-right absolute right-0  w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
+                        <div className="hidden group-hover:block origin-top-right absolute right-0  w-56 bg-white ring-1 ring-black ring-opacity-5">
                           <div
                             className="py-1"
                             role="menu"
@@ -221,24 +210,13 @@ export default function Example( { currentPage } ) {
                       <div className="relative inline-block text-left group">
                         <button
                           type="button"
-                           className="inline-flex justify-center items-center px-4 py-2  shadow-sm text-sm font-medium rounded-md hover:underline "
+                           className="inline-flex justify-center items-center border-r  border-gray-400 px-4 py-2   text-sm font-medium hover:underline "
                         >
                         Resources
-                          <svg
-                            className="-mr-1 ml-2 h-5 w-5 group-hover:text-gray-500"
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 20 20"
-                            fill="currentColor"
-                          >
-                            <path
-                              fillRule="evenodd"
-                              d="M10 8a1 1 0 011 1v5a1 1 0 11-2 0V9a1 1 0 011-1zm-2.707-2.293a1 1 0 011.414 0L10 9.586l1.293-1.293a1 1 0 011.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414 1 1 0 011.414 0L10 9.586 11.293 8.293z"
-                              clipRule="evenodd"
-                            />
-                          </svg>
+
                         </button>
 
-                        <div className="hidden group-hover:block origin-top-right absolute right-0  w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
+                        <div className="hidden group-hover:block origin-top-right absolute right-0  w-56  bg-white ring-1 ring-black ring-opacity-5">
                           <div
                             className="py-1"
                             role="menu"
@@ -275,21 +253,10 @@ export default function Example( { currentPage } ) {
                         <a
                           type="button"
                           href="/blog"
-                           className="inline-flex justify-center items-center px-4 py-2  shadow-sm text-sm font-medium rounded-md hover:underline "
+                           className="inline-flex justify-center items-center border-r  border-gray-400 px-4 py-2   text-sm font-medium hover:underline "
                         >
                        Blogs & News
-                          <svg
-                            className="-mr-1 ml-2 h-5 w-5 group-hover:text-gray-500"
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 20 20"
-                            fill="currentColor"
-                          >
-                            <path
-                              fillRule="evenodd"
-                              d="M10 8a1 1 0 011 1v5a1 1 0 11-2 0V9a1 1 0 011-1zm-2.707-2.293a1 1 0 011.414 0L10 9.586l1.293-1.293a1 1 0 011.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414 1 1 0 011.414 0L10 9.586 11.293 8.293z"
-                              clipRule="evenodd"
-                            />
-                          </svg>
+
                         </a>
 
 
@@ -297,24 +264,13 @@ export default function Example( { currentPage } ) {
                       <div className="relative inline-block text-left group">
                         <button
                           type="button"
-                           className="inline-flex justify-center items-center px-4 py-2  shadow-sm text-sm font-medium rounded-md hover:underline "
+                           className="inline-flex justify-center items-center border-r  border-gray-400 px-4 py-2   text-sm font-medium hover:underline "
                         >
                         Contact us
-                          <svg
-                            className="-mr-1 ml-2 h-5 w-5 group-hover:text-gray-500"
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 20 20"
-                            fill="currentColor"
-                          >
-                            <path
-                              fillRule="evenodd"
-                              d="M10 8a1 1 0 011 1v5a1 1 0 11-2 0V9a1 1 0 011-1zm-2.707-2.293a1 1 0 011.414 0L10 9.586l1.293-1.293a1 1 0 011.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414 1 1 0 011.414 0L10 9.586 11.293 8.293z"
-                              clipRule="evenodd"
-                            />
-                          </svg>
+
                         </button>
 
-                        <div className="hidden group-hover:block origin-top-right absolute right-0  w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
+                        <div className="hidden group-hover:block origin-top-right absolute right-0  w-56  bg-white ring-1 ring-black ring-opacity-5">
                           <div
                             className="py-1"
                             role="menu"
@@ -344,7 +300,7 @@ export default function Example( { currentPage } ) {
                   </div>
 
                 </div>
-                 <button className="bg-blue-600 p-3 text-xl flex rounded-md text-white hover:bg-white font-bold hover:text-red-600 border border-solid border-white">
+                 <button className="bg-blue-600 p-3 text-xl flex text-white hover:bg-white font-bold hover:text-red-600 border border-solid border-white">
         <FaHandHoldingHeart className="" />
         Donate
       </button>
@@ -366,7 +322,7 @@ export default function Example( { currentPage } ) {
                     href={item.href}
                     className={classNames(
                       item.current ? 'bg-gray-900 text-white' : 'text-gray-700 hover:bg-gray-700 hover:text-white',
-                      'block rounded-md px-3 py-2 text-base font-medium'
+                      'block px-3 py-2 text-base font-medium'
                     )}
                     aria-current={item.current ? 'page' : undefined}
                   >

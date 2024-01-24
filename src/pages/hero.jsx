@@ -7,8 +7,37 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
 const ImageSlider = () => {
- 
 
+ const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        autoplay: true,
+        autoplaySpeed: 2000, // Set the duration for each slide
+        responsive: [
+        {
+            breakpoint: 1024, // Large PCs
+            settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            },
+        },
+        {
+            breakpoint: 768, // Tablets
+            settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            },
+        },
+        {
+            breakpoint: 480, // Mobile devices
+            settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            },
+        },
+        ],
+    };
     return (
         <div className="w-full grid grid-cols-1 lg:grid-cols-2">
             <div className="lg:col-span-1 lg:pl-10 flex flex-col justify-center">
@@ -28,10 +57,26 @@ const ImageSlider = () => {
                     </a>
                     <a href="#" className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900">
                         {/* Add your secondary action here */}
+
                     </a>
+
                 </div>
             </div>
+            <div>
 
+    <Slider {...settings}>
+      <div>
+        <img src={cyber1} alt="Slide 1" />
+      </div>
+      <div>
+        <img src={cyber2} alt="Slide 2" />
+      </div>
+      <div>
+        <img src={cyber3} alt="Slide 3" />
+      </div>
+      {/* Add more slides as needed */}
+    </Slider>
+                </div>
         </div>
     );
 };
