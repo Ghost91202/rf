@@ -1,11 +1,11 @@
 // components/Blog/BlogList.js
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import BlogPost from './BlogPost.js';
-import blogData from './data/blogData'; // Adjust the path accordingly
-import Navbar from '../layout/navbar.js';
+import BlogPost from './BlogPost.jsx';
+import blogData from './data/blogData.js'; // Adjust the path accordingly
+import Navbar from '../../pages/navbar';
 import './BlogList.css'; // Import the CSS file for styling
-import Footer from '../layout/Footer.js';
+import Footer from '../../pages/Footer.jsx';
 
 const BlogList = () => {
   const [currentPost, setCurrentPost] = useState(null);

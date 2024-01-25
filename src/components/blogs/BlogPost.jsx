@@ -1,6 +1,6 @@
 // components/Blog/BlogPost.js
 import React from 'react';
-import BlogVideo from './BlogVideo.js';
+import BlogVideo from './BlogVideo.jsx';
 const BlogPost = ({ post }) => {
   return (
     <div className="max-w-2xl mx-auto mt-8 p-10 bg-white rounded-md shadow-md">

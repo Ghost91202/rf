@@ -3,8 +3,8 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import blogData from './data/blogData';
 import './BlogCoverList.css';
-import Navbar from '../layout/navbar';
-import Footer from '../layout/Footer';
+import Navbar from '../../pages/navbar';
+import Footer from '../../pages/footer.jsx';
 
 const BlogCoverList = () => {
   const [currentPage, setCurrentPage] = useState(1);

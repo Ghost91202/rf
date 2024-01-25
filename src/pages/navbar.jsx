@@ -1,7 +1,7 @@
 import { Fragment, useState } from 'react'
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { HiMenu, HiX } from "react-icons/hi"; // Imported HiMenu and HiX icons
-
+import { Link } from "react-router-dom"
 import Logo from "../assets/RAHIL_FOUNDATION_LOGO-removebg-preview_20231205_111145_0000.png"
 import Signup from "./signup"
 import { IoIosMail } from "react-icons/io";
@@ -33,30 +33,30 @@ export default function Example( { currentPage } ) {
   <div className="container  mx-auto flex flex-wrap items-center justify-between">
     <div className="w-screen relative flex flex-wrap justify-between lg:w-auto lg:static lg:block lg:justify-start">
       <div className="flex w-full gap-1 text-xs md:text-md xl:text-md md:gap-5">
-        <a
+        <Link
           className="leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white"
-          href="#pablo"
+          to="#pablo"
         >
           {/* Your content */}
-        </a>
-        <a
+        </Link>
+        <Link
           className="font leading-relaxed flex whitespace-nowrap uppercase text-white"
-          href="tel:+918543810264"
+          to="tel:+918543810264"
         >
           <span>
             <FaPhone className="mt-1" />
           </span>
           <span>+91 9935201079</span>
-        </a>
-        <a
+        </Link>
+        <Link
           className="font leading-relaxed flex gap-1 whitespace-nowrap uppercase text-white"
-          href="mailto:rahilfoundationkanpur@gmail.com"
+          to="mailto:rahilfoundationkanpur@gmail.com"
         >
           <span>
             <IoIosMail className="mt-1" />
           </span>
           <span>rahilfoundationkanpur@gmail.com</span>
-        </a>
+        </Link>
       </div>
 
       <button
@@ -77,37 +77,37 @@ export default function Example( { currentPage } ) {
     >
       <ul className="flex  flex-col lg:flex-row list-none gap-2 lg:ml-auto">
         <li className="nav-item">
-          <a
+          <Link
             className="border-r-2 pr-6 py-2 flex items-center text-xl uppercase font-bold leading-snug text-white hover:opacity-75"
-            href="https://www.instagram.com/rahil_foundation/ "
+            to="https://www.instagram.com/rahil_foundation/ "
             target="_blank"
             rel="noopener noreferrer"
           >
             <i className="fab fa-instagram text-xl leading-lg text-white opacity-75"></i>
             <span className=""><FaInstagram /></span>
-          </a>
+          </Link>
         </li>
         <li className="nav-item">
-          <a
+          <Link
             className="border-r-2 pr-6 py-2 flex items-center text-xl uppercase font-bold leading-snug text-white hover:opacity-75"
-            href="https://www.facebook.com/rahilfoundation"
+            to="https://www.facebook.com/rahilfoundation"
             target="_blank"
             rel="noopener noreferrer"
           >
             <i className="fab fa-facebook text-xl leading-lg text-white opacity-75"></i>
             <span className=""><FaFacebook /></span>
-          </a>
+          </Link>
         </li>
         <li className="nav-item">
-          <a
+          <Link
             className=" py-2 flex items-center text-xl uppercase font-bold leading-snug text-white hover:opacity-75"
-            href="https://www.youtube.com/@RahilFoundation"
+            to="https://www.youtube.com/@RahilFoundation"
             target="_blank"
             rel="noopener noreferrer"
           >
             <i className="fab fa-youtube text-2xl leading-xl text-white"></i>
             <span className=""><FaYoutube /></span>
-          </a>
+          </Link>
         </li>
       </ul>
 
@@ -133,13 +133,13 @@ export default function Example( { currentPage } ) {
                 </div>
 
                 <div className="flex   justify-center ml-40  md:ml-1 items-center">
-                  <a href="/">
+                  <Link to="/">
                     <img
                       className="h-20 md:h-40 lg:h-28  w-auto  "
                       src={Logo}
                       alt="rahil foundation logo"
                     />
-                  </a>
+                  </Link>
                 </div>
                 <div className="flex flex-1  items-center justify-center ml-10 sm:items-stretch sm:justify-start">
 
@@ -161,49 +161,49 @@ export default function Example( { currentPage } ) {
                             aria-orientation="vertical"
                             aria-labelledby="options-menu"
                           >
-                            <a
-                              href="/about"
+                            <Link
+                              to="/about"
                               className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                               role="menuitem"
                             >
                             Who we are
-                            </a>
-                            <a
-                              href="#"
+                            </Link>
+                            <Link
+                              to="#"
                               className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                               role="menuitem"
                             >
                              what we do
-                            </a>
-                            <a
-                              href="#"
+                            </Link>
+                            <Link
+                              to="#"
                               className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                               role="menuitem"
                             >
                              Director's
-                            </a>
-                            <a
-                              href="#"
+                            </Link>
+                            <Link
+                              to="#"
                               className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                               role="menuitem"
                             >
                             Our location
-                            </a>
+                            </Link>
 
-                            <a
-                              href="#"
+                            <Link
+                              to="#"
                               className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                               role="menuitem"
                             >
                             Vision & Mission
-                            </a>
-                            <a
-                              href="#"
+                            </Link>
+                            <Link
+                              to="#"
                               className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                               role="menuitem"
                             >
                             Supporters
-                            </a>
+                            </Link>
                           </div>
                         </div>
                       </div>
@@ -223,41 +223,41 @@ export default function Example( { currentPage } ) {
                             aria-orientation="vertical"
                             aria-labelledby="options-menu"
                           >
-                            <a
-                              href="#"
+                            <Link
+                              to="#"
                               className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                               role="menuitem"
                             >
 
-                            </a>
-                            <a
-                              href="#"
+                            </Link>
+                            <Link
+                              to="#"
                               className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                               role="menuitem"
                             >
                              Projects  and activities
-                            </a>
-                            <a
-                              href="#"
+                            </Link>
+                            <Link
+                              to="#"
                               className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                               role="menuitem"
                             >
                               Calendars(Events)
-                            </a>
+                            </Link>
                           </div>
                         </div>
                       </div>
 
 
                       <div className="relative inline-block text-left group">
-                        <a
+                        <Link
                           type="button"
-                          href="/blog"
+                          to="/blog"
                            className="inline-flex justify-center items-center border-r  border-gray-400 px-4 py-2   text-sm font-medium hover:underline "
                         >
                        Blogs & News
 
-                        </a>
+                        </Link>
 
 
                       </div>
@@ -278,21 +278,21 @@ export default function Example( { currentPage } ) {
                             aria-labelledby="options-menu"
                           >
 
-                            <a
-                              href="https://forms.gle/BKbX4T41TLtW1VEc7"
+                            <Link
+                              to="https://forms.gle/BKbX4T41TLtW1VEc7"
                               target='blank'
                               className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                               role="menuitem"
                             >
                              Get in touch
-                            </a>
-                            <a
-                              href="#"
+                            </Link>
+                            <Link
+                              to="#"
                               className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                               role="menuitem"
                             >
                            FAQ
-                            </a>
+                            </Link>
                           </div>
                         </div>
                       </div>
@@ -319,7 +319,7 @@ export default function Example( { currentPage } ) {
                   <Disclosure.Button
                     key={item.name}
                     as="a"
-                    href={item.href}
+                    to={item.to}
                     className={classNames(
                       item.current ? 'bg-gray-900 text-white' : 'text-gray-700 hover:bg-gray-700 hover:text-white',
                       'block px-3 py-2 text-base font-medium'

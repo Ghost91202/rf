@@ -1,7 +1,8 @@
 import React from 'react'
+import { Link } from "react-router-dom"
 import Logo from "../../assets/RAHIL_FOUNDATION_LOGO-removebg-preview_20231205_111145_0000.png"
-import Navbar from "../layout/navbar"
-import Footer from '../layout/Footer'
+import Navbar from "../../pages/navbar"
+import Footer from '../../pages/Footer'
 const blog = () => {
     return (
         <div className='text-lg'>
@@ -20,7 +21,7 @@ const blog = () => {
                             bettersecurity. Stay informed about common online scams. If
                             something feels fishy, report it. Let's work together to create
                             a safer digital space then Join Now.
-                            <span className='hover:text-blue-500 hover:underline font-bold'> <a href="http://rahilfoundation.com">RAHIL FOUNDATION</a> </span>
+                            <span className='hover:text-blue-500 hover:underline font-bold'> <Link href="http://rahilfoundation.com">RAHIL FOUNDATION</Link> </span>
                             because our Primary Goal your Safety.
                         </p>
                         <br />
@@ -32,7 +33,7 @@ const blog = () => {
                             individuals into revealing sensitive Information. Phishing
                             awareness is about being alert and cautious to protect
                             yourself from online scams. Phishing is a type of
-                            <span className='hover:text-blue-500 hover:underline font-bold'> <a href="http://rahilfoundation.com">Cyber Attack</a> </span>
+                            <span className='hover:text-blue-500 hover:underline font-bold'> <Link href="http://rahilfoundation.com">Cyber Attack</Link> </span>
                             where scammers try to trick people into revealing sensitive information, such as passwords or credit card
                             numbers, by posing as trustworthy entities. Being aware
                             means recognizing the signs of phishing attempts, like
@@ -52,7 +53,7 @@ const blog = () => {
                         <br />
                         <p><span className='font-bold '>Social Media Safety:</span> Guidelines for Maintaining Securities &
                             Privacy while using Social Media platforms including setting
-                            <span className='hover:text-blue-500 hover:underline font-bold'> <a href="http://rahilfoundation.com"> Social media safety</a> </span>
+                            <span className='hover:text-blue-500 hover:underline font-bold'> <Link href="http://rahilfoundation.com"> Social media safety</Link> </span>
                             refers to the measures and
                             precautions individuals can take to protect themselves
                             and their personal information while using social media
@@ -67,7 +68,7 @@ const blog = () => {
                         <figure><img src="https://flowbite.s3.amazonaws.com/typography-plugin/typography-image-1.png" alt="" />
                         </figure>
                         <p >
-                            <span className='hover:text-blue-500 hover:underline font-bold'> <a href="http://rahilfoundation.com">Data security: </a></span>
+                            <span className='hover:text-blue-500 hover:underline font-bold'> <Link href="http://rahilfoundation.com">Data security: </Link></span>
                             n simple terms means keeping information safe from unauthorized access, theft,
                             or damage. It involves taking measures to protect data,
                             which can be anything from personal details like your
@@ -90,52 +91,52 @@ const blog = () => {
                     <h2 className="mb-8 text-2xl font-bold text-gray-800 ">Related articles</h2>
                     <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-4">
                         <article className="max-w-xs">
-                            <a href="#">
+                            <Link href="#">
                                 <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/article/blog-1.png" className="mb-5 rounded-lg" alt="Image 1" />
-                            </a>
+                            </Link>
                             <h2 className="mb-2 text-xl font-bold leading-tight text-gray-900">
-                                <a href="#">Our first office</a>
+                                <Link href="#">Our first office</Link>
                             </h2>
                             <p className="mb-4 text-gray-500 dark:text-gray-400">Over the past year, Volosoft has undergone many changes! After months of preparation.</p>
-                            <a href="#" className="inline-flex items-center font-medium underline underline-offset-4 text-primary-600 dark:text-primary-500 hover:no-underline">
+                            <Link href="#" className="inline-flex items-center font-medium underline underline-offset-4 text-primary-600 dark:text-primary-500 hover:no-underline">
                                 Read in 2 minutes
-                            </a>
+                            </Link>
                         </article>
                         <article className="max-w-xs">
-                            <a href="#">
+                            <Link href="#">
                                 <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/article/blog-2.png" className="mb-5 rounded-lg" alt="Image 2" />
-                            </a>
+                            </Link>
                             <h2 className="mb-2 text-xl font-bold leading-tight text-gray-900">
-                                <a href="#">Enterprise design tips</a>
+                                <Link href="#">Enterprise design tips</Link>
                             </h2>
                             <p className="mb-4  text-gray-500 dark:text-gray-400">Over the past year, Volosoft has undergone many changes! After months of preparation.</p>
-                            <a href="#" className="inline-flex items-center font-medium underline underline-offset-4 text-primary-600 dark:text-primary-500 hover:no-underline">
+                            <Link href="#" className="inline-flex items-center font-medium underline underline-offset-4 text-primary-600 dark:text-primary-500 hover:no-underline">
                                 Read in 12 minutes
-                            </a>
+                            </Link>
                         </article>
                         <article className="max-w-xs">
-                            <a href="#">
+                            <Link href="#">
                                 <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/article/blog-3.png" className="mb-5 rounded-lg" alt="Image 3" />
-                            </a>
+                            </Link>
                             <h2 className="mb-2 text-xl font-bold leading-tight text-gray-900 ">
-                                <a href="#">We partnered with Google</a>
+                                <Link href="#">We partnered with Google</Link>
                             </h2>
                             <p className="mb-4  text-gray-500 dark:text-gray-400">Over the past year, Volosoft has undergone many changes! After months of preparation.</p>
-                            <a href="#" className="inline-flex items-center font-medium underline underline-offset-4 text-primary-600 dark:text-primary-500 hover:no-underline">
+                            <Link href="#" className="inline-flex items-center font-medium underline underline-offset-4 text-primary-600 dark:text-primary-500 hover:no-underline">
                                 Read in 8 minutes
-                            </a>
+                            </Link>
                         </article>
                         <article className="max-w-xs">
-                            <a href="#">
+                            <Link href="#">
                                 <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/article/blog-4.png" className="mb-5 rounded-lg" alt="Image 4" />
-                            </a>
+                            </Link>
                             <h2 className="mb-2 text-xl font-bold leading-tight text-gray-900 ">
-                                <a href="#">Our first project with React</a>
+                                <Link href="#">Our first project with React</Link>
                             </h2>
                             <p className="mb-4  text-gray-500 dark:text-gray-400">Over the past year, Volosoft has undergone many changes! After months of preparation.</p>
-                            <a href="#" className="inline-flex items-center font-medium underline underline-offset-4 text-primary-600 dark:text-primary-500 hover:no-underline">
+                            <Link href="#" className="inline-flex items-center font-medium underline underline-offset-4 text-primary-600 dark:text-primary-500 hover:no-underline">
                                 Read in 4 minutes
-                            </a>
+                            </Link>
                         </article>
                     </div>
                 </div>
@@ -162,7 +163,7 @@ const blog = () => {
                                     <button type="submit" className="py-3 px-5 w-full bg-blue-700 text-sm font-medium text-center text-white rounded-lg border cursor-pointer bg-primary-700 border-primary-600 sm:rounded-none sm:rounded-r-lg hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Subscribe</button>
                                 </div>
                             </div>
-                            <div className="mx-auto max-w-screen-sm text-sm text-left text-gray-500 newsletter-form-footer dark:text-gray-300">We care about the protection of your data. <a href="#" className="font-medium text-primary-600 dark:text-primary-500 hover:underline">Read our Privacy Policy</a>.</div>
+                            <div className="mx-auto max-w-screen-sm text-sm text-left text-gray-500 newsletter-form-footer dark:text-gray-300">We care about the protection of your data. <Link href="#" className="font-medium text-primary-600 dark:text-primary-500 hover:underline">Read our Privacy Policy</Link>.</div>
                         </form>
                     </div>
                 </div>
