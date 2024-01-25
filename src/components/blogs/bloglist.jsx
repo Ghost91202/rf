@@ -2,10 +2,10 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import BlogPost from './BlogPost.jsx';
-import blogData from './data/blogData.js'; // Adjust the path accordingly
+import blogData from './data/blogData.jsx'; // Adjust the path accordingly
 import Navbar from '../../pages/navbar';
 import './BlogList.css'; // Import the CSS file for styling
-import Footer from '../../pages/Footer.jsx';
+import Footer from '../../pages/footer.jsx';
 
 const BlogList = () => {
   const [currentPost, setCurrentPost] = useState(null);
