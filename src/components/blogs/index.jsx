@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import blogData from './data/blogData';
-import './BlogCoverList.css';
+
 import Navbar from '../../pages/navbar';
 import Footer from '../../pages/footer.jsx';
 
