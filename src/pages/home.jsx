@@ -6,7 +6,7 @@ import About from "../components/layout/About.jsx"
 // import Content from './content.jsx'
 // import Accordians from './accordians.jsx'
 // import Testrimonials from './testimonials'
-import Footer from "../components/layout/Footer.jsx"
+import Footer from "./footer.jsx"
 // import Newslatter from "./newslatter.jsx"
 // import Regitration from "./regitration.jsx"
 // import Faq from "./faq.jsx"
