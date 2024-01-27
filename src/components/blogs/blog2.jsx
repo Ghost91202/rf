@@ -5,7 +5,7 @@ import Navbar from "../../pages/navbar"
 import Footer from '../../pages/footer'
 const blog = () => {
     return (
-        <div className='text-lg'>
+        <div className='text-lg w-screen overflow-hidden'>
             <Navbar />
             <main className="pt-8 pb-16 lg:pt-16 lg:pb-24 bg-white dark:bg-white-900 antialiased overflow-hidden    ">
                 <div className="flex justify-between px-4 mx-auto max-w-screen-xl ">

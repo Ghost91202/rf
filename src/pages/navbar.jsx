@@ -27,7 +27,7 @@ export default function Example( { currentPage } ) {
     return classes.filter( Boolean ).join( ' ' );
   };
   return (
-    <div className='z-999'>
+    <div className='z-999 w-screen overflow-hidden'>
 
      <nav className="relative flex-wrap items-center hidden md:flex overflow-hidden w-full  pr-10   lg:w-full md:w-full sm:w-full sm:overflow-hidden md:overflow-hidden justify-between  py-2 bg-orange-500">
   <div className="container  mx-auto flex flex-wrap items-center justify-between">
@@ -121,7 +121,7 @@ export default function Example( { currentPage } ) {
               <div className="relative flex h-20  items-center justify-center md:justify-between sm:justify-between">
                 <div className="absolute inset-y-0 left-0 flex  items-center sm:hidden">
                   {/* Mobile menu button*/}
-                  <Disclosure.Button className="relative inline-flex items-center justify-center p-2 text-gray-900 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                  <Disclosure.Button className="relative inline-flex items-center justify-center p-2 text-gray-900 hover:bg-orange-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                     <span className="absolute -inset-0.5" />
                     <span className="sr-only">Open main menu</span>
                     {open ? (
@@ -300,7 +300,7 @@ export default function Example( { currentPage } ) {
                   </div>
 
                 </div>
-                 <button className="bg-blue-600 p-3 text-xl flex text-white hover:bg-white font-bold hover:text-red-600 border border-solid border-white">
+                 <button className="bg-blue-600 p-2 flex text-white hover:bg-white font-bold hover:text-orange-600 hover:border border-solid hover:border-orange-500">
         <FaHandHoldingHeart className="" />
         Donate
       </button>
@@ -321,7 +321,7 @@ export default function Example( { currentPage } ) {
                     as="a"
                     to={item.to}
                     className={classNames(
-                      item.current ? 'bg-gray-900 text-white' : 'text-gray-700 hover:bg-gray-700 hover:text-white',
+                      item.current ? 'bg-orange-500 text-white' : 'text-gray-700 hover:bg-orange-500 hover:text-white',
                       'block px-3 py-2 text-base font-medium'
                     )}
                     aria-current={item.current ? 'page' : undefined}

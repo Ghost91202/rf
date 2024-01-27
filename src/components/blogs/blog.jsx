@@ -4,7 +4,7 @@ import BlogList from './bloglist.jsx';
 
 const Blog = () => {
   return (
-    <div>
+    <div className='w-screen overflow-hidden'>
 
       <BlogList />
     </div>

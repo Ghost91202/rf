@@ -11,7 +11,7 @@ import Registration from "./auth/Registration.jsx"
 import Navbar2 from "./pages/navbar"
 import BlogList from "./components/blogs/bloglist.jsx"
 import BlogForm from './components/blogs/contentpost.jsx';
-
+import "./App.css"
 import Contact from "./components/layout/contactUs.jsx"
 const App = () => {
 

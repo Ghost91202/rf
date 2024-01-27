@@ -27,35 +27,36 @@ const BlogCoverList = () => {
   return (
     <div>
 <Navbar />
-    <div className="min-h-screen flex flex-col justify-center items-center  ">
+  <div className="min-h-screen w-screen overflow-hidden flex flex-col justify-center items-center">
 
-      <div className=" p-8 mx-auto max-w-screen-lg  bg-opacity-75 rounded-lg shadow-lg">
-        <h1 className="text-4xl mb-8 text-center">All Blogs</h1>
-        <div className=" w-screen grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-          {currentPosts.map((post) => (
-            <div key={post.id} className="flex mb-14">
-              <Link to={`/blog/${post.id}`} className="blog-cover-link">
-                <div className="blog-cover w-full rounded-lg overflow-hidden shadow-md bg-gray-200">
-                  <img src={post.coverImageUrl} alt={`Cover for ${post.title}`} className="w-full h-48 object-cover" />
-                  <div className="p-4">
-                    <h3 className="text-lg font-semibold">{post.title}</h3>
-                  </div>
-                </div>
-              </Link>
+  <div className="p-4 md:p-8 mx-auto max-w-screen-lg bg-opacity-75 rounded-lg shadow-lg">
+    <h1 className="text-2xl md:text-4xl mb-4 md:mb-8 text-center font-semibold">All Blogs</h1>
+    <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-8">
+      {currentPosts.map((post) => (
+        <div key={post.id} className="flex mb-4 md:mb-8">
+          <Link to={`/blog/${post.id}`} className="blog-cover-link">
+            <div className="blog-cover w-full rounded-lg overflow-hidden shadow-md ">
+              <img src={post.coverImageUrl} alt={`Cover for ${post.title}`} className="w-full h-40 md:h-48 object-cover" />
+              <div className="p-2 md:p-4">
+                <h3 className="text-base md:text-lg font-semibold">{post.title}</h3>
+              </div>
             </div>
-          ))}
+          </Link>
         </div>
-        <div className="mt-8 flex justify-between">
-          <button onClick={handlePrevPage} disabled={currentPage === 1} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
-            Previous
-          </button>
-          <span>{`Page ${currentPage} of ${totalPages}`}</span>
-          <button onClick={handleNextPage} disabled={currentPage === totalPages} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
-            Next
-          </button>
-        </div>
-      </div>
+      ))}
     </div>
+    <div className="mt-4 md:mt-8 flex flex-row justify-between">
+      <button onClick={handlePrevPage} disabled={currentPage === 1} className="bg-blue-500 hover:bg-blue-700 text-white  lg:py-2  px-4 rounded mb-2 md:mb-0 md:mr-2 focus:outline-none focus:shadow-outline">
+        Previous
+      </button>
+      <span className="mb-2 md:mb-0">{`Page ${currentPage} of ${totalPages}`}</span>
+      <button onClick={handleNextPage} disabled={currentPage === totalPages} className="bg-blue-500 hover:bg-blue-700 text-white  lg:py-2 px-4   rounded focus:outline-none focus:shadow-outline">
+        Next
+      </button>
+    </div>
+  </div>
+</div>
+
       <Footer />
     </div>
   );
