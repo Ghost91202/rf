@@ -27,93 +27,93 @@ export default function Example( { currentPage } ) {
     return classes.filter( Boolean ).join( ' ' );
   };
   return (
-    <div className='z-999 w-screen overflow-hidden'>
+    <div className='z-999'>
 
-     <nav className="relative flex-wrap items-center hidden md:flex overflow-hidden w-full  pr-10   lg:w-full md:w-full sm:w-full sm:overflow-hidden md:overflow-hidden justify-between  py-2 bg-orange-500">
-  <div className="container  mx-auto flex flex-wrap items-center justify-between">
-    <div className="w-screen relative flex flex-wrap justify-between lg:w-auto lg:static lg:block lg:justify-start">
-      <div className="flex w-full gap-1 text-xs md:text-md xl:text-md md:gap-5">
-        <Link
-          className="leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white"
-          to="#pablo"
-        >
-          {/* Your content */}
-        </Link>
-        <Link
-          className="font leading-relaxed flex whitespace-nowrap uppercase text-white"
-          to="tel:+918543810264"
-        >
-          <span>
-            <FaPhone className="mt-1" />
-          </span>
-          <span>+91 9935201079</span>
-        </Link>
-        <Link
-          className="font leading-relaxed flex gap-1 whitespace-nowrap uppercase text-white"
-          to="mailto:rahilfoundationkanpur@gmail.com"
-        >
-          <span>
-            <IoIosMail className="mt-1" />
-          </span>
-          <span>rahilfoundationkanpur@gmail.com</span>
-        </Link>
-      </div>
+      <nav className="relative flex-wrap items-center hidden md:flex overflow-hidden w-full  pr-10   lg:w-full md:w-full sm:w-full sm:overflow-hidden md:overflow-hidden justify-between  py-2 bg-orange-500">
+        <div className="container  mx-auto flex flex-wrap items-center justify-between">
+          <div className="w-screen relative flex flex-wrap justify-between lg:w-auto lg:static lg:block lg:justify-start">
+            <div className="flex w-full gap-1 text-xs md:text-md xl:text-md md:gap-5">
+              <Link
+                className="leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white"
+                to="#pablo"
+              >
+                {/* Your content */}
+              </Link>
+              <Link
+                className="font leading-relaxed flex whitespace-nowrap uppercase text-white"
+                to="tel:+918543810264"
+              >
+                <span>
+                  <FaPhone className="mt-1" />
+                </span>
+                <span>+91 9935201079</span>
+              </Link>
+              <Link
+                className="font leading-relaxed flex gap-1 whitespace-nowrap uppercase text-white"
+                to="mailto:rahilfoundationkanpur@gmail.com"
+              >
+                <span>
+                  <IoIosMail className="mt-1" />
+                </span>
+                <span>rahilfoundationkanpur@gmail.com</span>
+              </Link>
+            </div>
 
-      <button
-        className="text-white cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
-        type="button"
-        onClick={() => setNavbarOpen(!navbarOpen)}
-      >
-        <i className="fas fa-bars"></i>
-      </button>
-    </div>
+            <button
+              className="text-white cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+              type="button"
+              onClick={() => setNavbarOpen( !navbarOpen )}
+            >
+              <i className="fas fa-bars"></i>
+            </button>
+          </div>
 
-    <div
-      className={
-        "lg:flex flex-grow items-center" +
-        (navbarOpen ? " flex" : " hidden")
-      }
-      id="example-navbar-danger"
-    >
-      <ul className="flex  flex-col lg:flex-row list-none gap-2 lg:ml-auto">
-        <li className="nav-item">
-          <Link
-            className="border-r-2 pr-6 py-2 flex items-center text-xl uppercase font-bold leading-snug text-white hover:opacity-75"
-            to="https://www.instagram.com/rahil_foundation/ "
-            target="_blank"
-            rel="noopener noreferrer"
+          <div
+            className={
+              "lg:flex flex-grow items-center" +
+              ( navbarOpen ? " flex" : " hidden" )
+            }
+            id="example-navbar-danger"
           >
-            <i className="fab fa-instagram text-xl leading-lg text-white opacity-75"></i>
-            <span className=""><FaInstagram /></span>
-          </Link>
-        </li>
-        <li className="nav-item">
-          <Link
-            className="border-r-2 pr-6 py-2 flex items-center text-xl uppercase font-bold leading-snug text-white hover:opacity-75"
-            to="https://www.facebook.com/rahilfoundation"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i className="fab fa-facebook text-xl leading-lg text-white opacity-75"></i>
-            <span className=""><FaFacebook /></span>
-          </Link>
-        </li>
-        <li className="nav-item">
-          <Link
-            className=" py-2 flex items-center text-xl uppercase font-bold leading-snug text-white hover:opacity-75"
-            to="https://www.youtube.com/@RahilFoundation"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i className="fab fa-youtube text-2xl leading-xl text-white"></i>
-            <span className=""><FaYoutube /></span>
-          </Link>
-        </li>
-      </ul>
+            <ul className="flex  flex-col lg:flex-row list-none gap-2 lg:ml-auto">
+              <li className="nav-item">
+                <Link
+                  className="border-r-2 pr-6 py-2 flex items-center text-xl uppercase font-bold leading-snug text-white hover:opacity-75"
+                  to="https://www.instagram.com/rahil_foundation/ "
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i className="fab fa-instagram text-xl leading-lg text-white opacity-75"></i>
+                  <span className=""><FaInstagram /></span>
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link
+                  className="border-r-2 pr-6 py-2 flex items-center text-xl uppercase font-bold leading-snug text-white hover:opacity-75"
+                  to="https://www.facebook.com/rahilfoundation"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i className="fab fa-facebook text-xl leading-lg text-white opacity-75"></i>
+                  <span className=""><FaFacebook /></span>
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link
+                  className=" py-2 flex items-center text-xl uppercase font-bold leading-snug text-white hover:opacity-75"
+                  to="https://www.youtube.com/@RahilFoundation"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i className="fab fa-youtube text-2xl leading-xl text-white"></i>
+                  <span className=""><FaYoutube /></span>
+                </Link>
+              </li>
+            </ul>
 
-    </div>
-  </div>
-</nav>
+          </div>
+        </div>
+      </nav>
       <Disclosure as="nav" className="backdrop-blur-3xl z-50 bg-white/60 sticky top-0  ">
         {( { open } ) => (
           <>
@@ -121,7 +121,7 @@ export default function Example( { currentPage } ) {
               <div className="relative flex h-20  items-center justify-center md:justify-between sm:justify-between">
                 <div className="absolute inset-y-0 left-0 flex  items-center sm:hidden">
                   {/* Mobile menu button*/}
-                  <Disclosure.Button className="relative inline-flex items-center justify-center p-2 text-gray-900 hover:bg-orange-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                  <Disclosure.Button className="relative inline-flex items-center justify-center p-2 text-gray-900 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                     <span className="absolute -inset-0.5" />
                     <span className="sr-only">Open main menu</span>
                     {open ? (
@@ -150,7 +150,7 @@ export default function Example( { currentPage } ) {
                           type="button"
                           className="inline-flex justify-center items-center border-r  border-gray-400 px-4 py-2   text-sm font-medium hover:underline "
                         >
-                        About us
+                          About us
 
                         </button>
 
@@ -166,28 +166,28 @@ export default function Example( { currentPage } ) {
                               className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                               role="menuitem"
                             >
-                            Who we are
+                              Who we are
                             </Link>
                             <Link
                               to="#"
                               className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                               role="menuitem"
                             >
-                             what we do
+                              what we do
                             </Link>
                             <Link
                               to="#"
                               className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                               role="menuitem"
                             >
-                             Director's
+                              Director's
                             </Link>
                             <Link
                               to="#"
                               className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                               role="menuitem"
                             >
-                            Our location
+                              Our location
                             </Link>
 
                             <Link
@@ -195,14 +195,14 @@ export default function Example( { currentPage } ) {
                               className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                               role="menuitem"
                             >
-                            Vision & Mission
+                              Vision & Mission
                             </Link>
                             <Link
                               to="#"
                               className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                               role="menuitem"
                             >
-                            Supporters
+                              Supporters
                             </Link>
                           </div>
                         </div>
@@ -210,9 +210,9 @@ export default function Example( { currentPage } ) {
                       <div className="relative inline-block text-left group">
                         <button
                           type="button"
-                           className="inline-flex justify-center items-center border-r  border-gray-400 px-4 py-2   text-sm font-medium hover:underline "
+                          className="inline-flex justify-center items-center border-r  border-gray-400 px-4 py-2   text-sm font-medium hover:underline "
                         >
-                        Resources
+                          Resources
 
                         </button>
 
@@ -235,7 +235,7 @@ export default function Example( { currentPage } ) {
                               className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                               role="menuitem"
                             >
-                             Projects  and activities
+                              Projects  and activities
                             </Link>
                             <Link
                               to="#"
@@ -253,9 +253,9 @@ export default function Example( { currentPage } ) {
                         <Link
                           type="button"
                           to="/blog"
-                           className="inline-flex justify-center items-center border-r  border-gray-400 px-4 py-2   text-sm font-medium hover:underline "
+                          className="inline-flex justify-center items-center border-r  border-gray-400 px-4 py-2   text-sm font-medium hover:underline "
                         >
-                       Blogs & News
+                          Blogs & News
 
                         </Link>
 
@@ -264,9 +264,9 @@ export default function Example( { currentPage } ) {
                       <div className="relative inline-block text-left group">
                         <button
                           type="button"
-                           className="inline-flex justify-center items-center border-r  border-gray-400 px-4 py-2   text-sm font-medium hover:underline "
+                          className="inline-flex justify-center items-center border-r  border-gray-400 px-4 py-2   text-sm font-medium hover:underline "
                         >
-                        Contact us
+                          Contact us
 
                         </button>
 
@@ -284,14 +284,14 @@ export default function Example( { currentPage } ) {
                               className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                               role="menuitem"
                             >
-                             Get in touch
+                              Get in touch
                             </Link>
                             <Link
                               to="#"
                               className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                               role="menuitem"
                             >
-                           FAQ
+                              FAQ
                             </Link>
                           </div>
                         </div>
@@ -300,10 +300,10 @@ export default function Example( { currentPage } ) {
                   </div>
 
                 </div>
-                 <button className="bg-blue-600 p-2 flex text-white hover:bg-white font-bold hover:text-orange-600 hover:border border-solid hover:border-orange-500">
-        <FaHandHoldingHeart className="" />
-        Donate
-      </button>
+                <button className="bg-blue-600 p-3 flex text-white hover:bg-white font-bold hover:text-red-600 border border-solid border-white">
+                  <FaHandHoldingHeart className="" />
+                  Donate
+                </button>
                 <div className='gap-6 flex'>
 
                   <button className='bg-blue-600  text-white rounded-lg hidden text-sm p-1 -ml-20 md-text-lg '>
@@ -321,7 +321,7 @@ export default function Example( { currentPage } ) {
                     as="a"
                     to={item.to}
                     className={classNames(
-                      item.current ? 'bg-orange-500 text-white' : 'text-gray-700 hover:bg-orange-500 hover:text-white',
+                      item.current ? 'bg-gray-900 text-white' : 'text-gray-700 hover:bg-gray-700 hover:text-white',
                       'block px-3 py-2 text-base font-medium'
                     )}
                     aria-current={item.current ? 'page' : undefined}

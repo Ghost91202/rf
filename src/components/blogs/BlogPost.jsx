@@ -3,7 +3,7 @@ import React from 'react';
 import BlogVideo from './BlogVideo.jsx';
 const BlogPost = ({ post }) => {
   return (
-    <div className="max-w-2xl mx-auto mt-8 p-10 bg-white rounded-md shadow-md">
+    <div className="max-w-2xl mx-auto mt-8 p-10 rounded-md shadow-md">
       <h1 className="text-4xl text-center border-b-2 border-orange-400 font-semibold mb-6">{post.title}</h1>
 
       <p className="text-gray-700 mb-4">{post.intro}</p>

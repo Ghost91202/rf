@@ -31,7 +31,7 @@ const BlogList = () => {
   };
 
   return (
-    <div className="min-h-screen w-screen overflow-hidden bg-gray-100">
+    <div className="min-h-screen w-screen overflow-hidden ">
       <Navbar />
       <div className="blog-list-container max-w-4xl mx-auto p-4 md:p-8">
         {currentPost ? (
