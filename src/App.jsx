@@ -15,19 +15,19 @@ import "./App.css"
 import Contact from "./components/layout/contactUs.jsx"
 const App = () => {
 
-    //  useEffect(() => {
-    // const handleContextMenu = (event) => {
-    //   event.preventDefault();
-    // };
+     useEffect(() => {
+    const handleContextMenu = (event) => {
+      event.preventDefault();
+    };
 
-    // // Add event listener when the component mounts
-    // window.addEventListener('contextmenu', handleContextMenu);
+    // Add event listener when the component mounts
+    window.addEventListener('contextmenu', handleContextMenu);
 
-    // // Clean up the event listener when the component unmounts
-    // return () => {
-    //   window.removeEventListener('contextmenu', handleContextMenu);
-    // };
-    //  }, [] );
+    // Clean up the event listener when the component unmounts
+    return () => {
+      window.removeEventListener('contextmenu', handleContextMenu);
+    };
+     }, [] );
 
 
     return (
