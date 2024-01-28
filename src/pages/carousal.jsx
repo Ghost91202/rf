@@ -44,16 +44,16 @@ const ImageSlider = () => {
 
     <Slider {...settings}>
       <div>
-        <img src={cyber1} alt="Slide 1" />
+        <img src={cyber1} alt="Slide 1" className='w-screen'/>
       </div>
       <div>
-        <img src={cyber2} alt="Slide 2" />
+        <img src={cyber2} alt="Slide 2" className='w-screen'/>
       </div>
       <div>
-        <img src={cyber3} alt="Slide 3" />
+        <img src={cyber3} alt="Slide 3" className='w-screen'/>
       </div>
       <div>
-        <img src={cyber4} alt="Slide 3" />
+        <img src={cyber4} alt="Slide 3" className='w-screen'/>
       </div>
       {/* Add more slides as needed */}
     </Slider>
