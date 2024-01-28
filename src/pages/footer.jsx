@@ -1,5 +1,5 @@
 import React from 'react'
-import Logo from "../assets/RAHIL_FOUNDATION_LOGO-removebg-preview_20231205_111145_0000.png"
+import Logo from "../assets/logo.png"
 
 import "./Footer.css"
 import bgimg from "../assets/download.jpeg"

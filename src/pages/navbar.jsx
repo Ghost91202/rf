@@ -2,7 +2,7 @@ import { Fragment, useState } from 'react'
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { HiMenu, HiX } from "react-icons/hi"; // Imported HiMenu and HiX icons
 import { Link } from "react-router-dom"
-import Logo from "../assets/RAHIL_FOUNDATION_LOGO-removebg-preview_20231205_111145_0000.png"
+import Logo from "../assets/logo.png"
 import Signup from "./signup"
 import { IoIosMail } from "react-icons/io";
 import { CiHeart } from "react-icons/ci";

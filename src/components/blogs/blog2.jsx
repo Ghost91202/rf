@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from "react-router-dom"
-import Logo from "../../assets/RAHIL_FOUNDATION_LOGO-removebg-preview_20231205_111145_0000.png"
+import Logo from "../../assets/logo.png"
 import Navbar from "../../pages/navbar"
 import Footer from '../../pages/footer'
 const blog = () => {
