@@ -13,7 +13,7 @@ const BlogPost = ({ post }) => {
       <p className="text-gray-700 mb-4">{post.para2}</p>
       <p className="text-gray-700 mb-4">{post.para3}</p>
 
-      {post.imgurl && <img src={post.imgurl} alt="blog-image" className="w-full mb-6 rounded-md" />}
+      {post.imgurl && <img src={post.imgurl} alt="rahil foundation" className="w-full mb-6 rounded-md" />}
 
       <h2 className="text-2xl font-semibold mb-4">{post.Heading2}</h2>
       <p className="text-gray-700 mb-4">{post.para4}</p>

@@ -1,0 +1,21 @@
+.loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.loading-skeleton {
+    width: 200px;
+    height: 20px;
+    background-color: #ddd;
+    /* Adjust color as needed */
+    margin-bottom: 10px;
+}
+
+.loading-text {
+    width: 150px;
+    height: 15px;
+    background-color: #ddd;
+    /* Adjust color as needed */
+}

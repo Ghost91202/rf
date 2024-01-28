@@ -1,44 +1,29 @@
-import React from 'react'
-import Navbar from './navbar.jsx'
-import Hero from './hero.jsx'
-import Services from "./service.jsx"
-import About from "../components/layout/About.jsx"
-// import Content from './content.jsx'
-// import Accordians from './accordians.jsx'
-// import Testrimonials from './testimonials'
-import Footer from "./footer.jsx"
-import Newslatter from "./newslatter.jsx"
-// import Regitration from "./regitration.jsx"
-import Faq from "../components/layout/faq.jsx"
-// import GetinTouch from "../components/layout/getintouch.jsx"
-// import Cta from "./cta.jsx"
-import Carousel from "./carousal.jsx"
-import How from "../components/layout/howto.jsx"
-import Ourstr from "../components/layout/Stories.jsx"
+import React, { lazy, Suspense } from 'react';
 
-const home = () => {
-    return (
-        <div className='w-screen overflow-x-hidden'>
+const Navbar = lazy(() => import('./navbar.jsx'));
+const Carousel = lazy(() => import('./carousal.jsx'));
+const Services = lazy(() => import('./service.jsx'));
+const How = lazy(() => import('../components/layout/howto.jsx'));
+const Ourstr = lazy(() => import('../components/layout/Stories.jsx'));
+const Newslatter = lazy(() => import('./newslatter.jsx'));
+const Footer = lazy(() => import('./footer.jsx'));
+const Faq = lazy(() => import('../components/layout/faq.jsx'));
 
-            <Navbar />
-            <Carousel />
+const Home = () => {
+  return (
+    <div className='w-screen overflow-x-hidden'>
+      <Suspense fallback={<div>Loading...</div>}>
+        <Navbar />
+        <Carousel />
+        <Services />
+        <How />
+        <Ourstr />
+        <Faq />
+        <Newslatter />
+        <Footer />
+      </Suspense>
+    </div>
+  );
+};
 
-            <Services />
-            <How />
-            <Ourstr/>
-              {/* <Hero /> */}
-
-
-
-            {/* <Accordians />
-            <Cta /> */}
-
-            <Faq />
-            {/* <GetinTouch /> */}
-            <Newslatter />
-            <Footer />
-        </div>
-    )
-}
-
-export default home
+export default Home;

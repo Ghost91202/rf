@@ -65,7 +65,7 @@ const blog = () => {
                             online, it can be challenging to control its dissemination.
                             Avoid sharing information or images that you wouldn't
                             want to be public.</p>
-                        <figure><img src="https://flowbite.s3.amazonaws.com/typography-plugin/typography-image-1.png" alt="" />
+                        <figure><img src="https://flowbite.s3.amazonaws.com/typography-plugin/typography-image-1.png" alt="rahil foundation" />
                         </figure>
                         <p >
                             <span className='hover:text-blue-500 hover:underline font-bold'> <Link href="http://rahilfoundation.com">Data security: </Link></span>
@@ -92,7 +92,7 @@ const blog = () => {
                     <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-4">
                         <article className="max-w-xs">
                             <Link href="#">
-                                <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/article/blog-1.png" className="mb-5 rounded-lg" alt="Image 1" />
+                                <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/article/blog-1.png" className="mb-5 rounded-lg" alt="rahil foundation" />
                             </Link>
                             <h2 className="mb-2 text-xl font-bold leading-tight text-gray-900">
                                 <Link href="#">Our first office</Link>
@@ -104,7 +104,7 @@ const blog = () => {
                         </article>
                         <article className="max-w-xs">
                             <Link href="#">
-                                <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/article/blog-2.png" className="mb-5 rounded-lg" alt="Image 2" />
+                                <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/article/blog-2.png" className="mb-5 rounded-lg" alt="rahil foundation" />
                             </Link>
                             <h2 className="mb-2 text-xl font-bold leading-tight text-gray-900">
                                 <Link href="#">Enterprise design tips</Link>
@@ -116,7 +116,7 @@ const blog = () => {
                         </article>
                         <article className="max-w-xs">
                             <Link href="#">
-                                <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/article/blog-3.png" className="mb-5 rounded-lg" alt="Image 3" />
+                                <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/article/blog-3.png" className="mb-5 rounded-lg" alt="rahil foundation" />
                             </Link>
                             <h2 className="mb-2 text-xl font-bold leading-tight text-gray-900 ">
                                 <Link href="#">We partnered with Google</Link>
@@ -128,7 +128,7 @@ const blog = () => {
                         </article>
                         <article className="max-w-xs">
                             <Link href="#">
-                                <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/article/blog-4.png" className="mb-5 rounded-lg" alt="Image 4" />
+                                <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/article/blog-4.png" className="mb-5 rounded-lg" alt="rahil foundation" />
                             </Link>
                             <h2 className="mb-2 text-xl font-bold leading-tight text-gray-900 ">
                                 <Link href="#">Our first project with React</Link>

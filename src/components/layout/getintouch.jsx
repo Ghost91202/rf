@@ -43,7 +43,7 @@ const getintouch = () => {
                                 >email</a> instead.
                             </div>
                         </div>
-                        <img src={Getintouch} alt="" className='mr-10 rounded-xl ' />
+                        <img src={Getintouch} alt="rahil foundation" className='mr-10 rounded-xl ' />
 
                     </div>
                     <div className="">

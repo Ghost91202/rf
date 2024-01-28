@@ -16,7 +16,7 @@ const Aboutpage = () => {
           <img
             src="https://kitwind.io/assets/kometa/laptop.png"
             className="object-cover object-right w-3/4  h-3/4 lg:w-3/4 lg:h-full"
-            alt=""
+            alt="rahil foundation"
           />
         </div>
         <div className="relative flex lg:h-screen  justify-end max-w-xl mx-auto xl:pr-32 lg:max-w-screen-xl overflow-y-scroll ">

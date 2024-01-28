@@ -5,7 +5,7 @@ import Supports from "../../assets/supports.jpg"
 const howto = () => {
   return (
       <div className='flex lg:flex-row flex-col w-screen h-auto overflow-hidden gap-5'>
-        <img src={Supports} alt="" className='xl:w-1/3 lg:h-auto h-96'/>
+        <img src={Supports} alt="rahil foundation" className='xl:w-1/3 lg:h-auto h-96'/>
           <div className='flex flex-col gap-3 p-10'>
               <h1 className='font-bold xl:text-3xl border-b-2 border-black pb-4'>How To Support?</h1>
               <div className='lg:grid lg:grid-flow-col  lg:grid-cols-2'>
@@ -16,7 +16,7 @@ const howto = () => {
                       <BUtton url="/about" title="Support"/>
                       </div>
                   </div>
-               <img src={how} alt="" className='hidden lg:flex'/>
+               <img src={how} alt="rahil foundation" className='hidden lg:flex'/>
               </div>
         </div>
     </div>

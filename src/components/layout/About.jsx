@@ -27,7 +27,7 @@ const About = () => {
           </div>
 
           <div className="grid grid-row gap-4 mt-8">
-            <img className="w-full  rounded-xl" src={AboutImg} alt="office content 1" />
+            <img className="w-full  rounded-xl" src={AboutImg} alt="rahil foundation" />
             {/* <img className="mt-4 ml-5      w-96 h-96 lg:mt-1 rounded-lg" src={Aboutimg2} alt="office content 2" /> */}
           </div>
         </div>

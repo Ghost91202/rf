@@ -67,13 +67,13 @@ const ImageSlider = () => {
 
     <Slider {...settings}>
       <div>
-        <img src={cyber1} alt="Slide 1" />
+        <img src={cyber1} alt="rahil foundation" />
       </div>
       <div>
-        <img src={cyber2} alt="Slide 2" />
+        <img src={cyber2} alt="rahil foundation" />
       </div>
       <div>
-        <img src={cyber3} alt="Slide 3" />
+        <img src={cyber3} alt="rahil foundation" />
       </div>
       {/* Add more slides as needed */}
     </Slider>

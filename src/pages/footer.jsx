@@ -18,7 +18,7 @@ const Footer = () => {
                         <div className="md:flex md:justify-between">
                             <div className="mb-6 md:mb-0">
                                 <Link to="/" className="flex items-center">
-                                    <img src={Logo} className="h-36 w-auto me-3" alt="FlowBite Logo" />
+                                    <img src={Logo} className="h-36 w-auto me-3" alt="rahil foundation" />
                                     <span className="self-center text-2xl font-semibold whitespace-nowrap "></span>
                                 </Link>
 
