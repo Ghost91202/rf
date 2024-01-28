@@ -1,8 +1,9 @@
 import React from 'react';
 import Slider from 'react-slick';
-import cyber1 from "../assets/banner1.jpg"
-import cyber2 from "../assets/banner 2.jpg"
-import cyber3 from "../assets/banner 3.jpg"
+import cyber1 from "../assets/1.jpg"
+import cyber2 from "../assets/2.jpg"
+import cyber3 from "../assets/3.jpg"
+import cyber4 from "../assets/4.jpg"
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
