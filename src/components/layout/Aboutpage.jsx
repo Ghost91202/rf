@@ -11,7 +11,7 @@ const Aboutpage = () => {
       </div>
       <Navbar />
 
-      <div className="w-screen  flex lg:flex-row flex-col p-20">
+      <div className="w-screen  flex lg:flex-row flex-col lg:p-0 p-10">
 
         <div className="relative flex lg:h-screen  justify-end max-w-xl mx-auto xl:pr-32 lg:max-w-screen-xl  ">
 
@@ -39,7 +39,7 @@ const Aboutpage = () => {
               </p>
               <br />
                <br />
-              
+
               <p className="max-w-lg mb-6 font-sans text-xl lg:text-3xl font-bold tracking-tight text-gray-900 sm:text-2xl sm:leading-none">
                 Whose Chain We Have Created <span className='text-orange-500 '>
                  CYBER CIVILIZED
