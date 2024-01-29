@@ -1,15 +1,17 @@
 import React, { useEffect, lazy, Suspense } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './pages/home';
-
+import Blog from "./components/blogs/index.jsx"
+import About from "./components/layout/Aboutpage"
+import BlogList from "./components/blogs/bloglist.jsx"
 // Lazy-loaded components
 const Signup = lazy(() => import("./pages/register.jsx"));
-const Blog = lazy(() => import("./components/blogs/index.jsx"));
+
 const Blog2 = lazy(() => import("./components/blogs/blog2"));
-const About = lazy(() => import("./components/layout/Aboutpage"));
+
 const Team = lazy(() => import("./components/layout/Team"));
 const Navbar2 = lazy(() => import("./pages/navbar"));
-const BlogList = lazy(() => import("./components/blogs/bloglist.jsx"));
+
 const BlogForm = lazy(() => import('./components/blogs/contentpost.jsx'));
 const Contact = lazy(() => import("./components/layout/contactUs.jsx"));
 const Loading = lazy(() => import('./Loading.jsx'));
@@ -35,11 +37,11 @@ const App = () => {
         <Route path="/blog" element={<Suspense fallback={<Loading />}><Blog /></Suspense>} />
         <Route path="/blog/:id" element={<Suspense fallback={<Loading />}><BlogList /></Suspense>} />
         <Route path="/blog/phishing_attacks" element={<Suspense fallback={<Loading />}><Blog2 /></Suspense>} />
-        <Route path="/About" element={<Suspense fallback={<Loading />}><About /></Suspense>} />
-        <Route path="/add" element={<Suspense fallback={<Loading />}><BlogForm /></Suspense>} />
-        <Route path="/Team" element={<Suspense fallback={<Loading />}><Team /></Suspense>} />
-        <Route path="/navbar" element={<Suspense fallback={<Loading />}><Navbar2 /></Suspense>} />
-        <Route path="/ContactUS" element={<Suspense fallback={<Loading />}><Contact /></Suspense>} />
+        <Route path="/About" element={<About />} />
+        <Route path="/add" element={<BlogForm />} />
+        <Route path="/Team" element={<Team />} />
+        <Route path="/navbar" element={<Navbar2 />} />
+        <Route path="/ContactUS" element={<Contact />} />
       </Routes>
     </Router>
   );
