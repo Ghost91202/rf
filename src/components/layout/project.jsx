@@ -4,7 +4,7 @@ import project1 from "../../assets/pro.png"
 const project = () => {
   return (
       <div>
-          <div className='grid lg:h-screen lg:mb-10 grid-flow-cols grid-cols-1  lg:grid-cols-2'>
+          <div className='grid lg:h-auto lg:mb-10  grid-flow-cols grid-cols-1  lg:grid-cols-2'>
 
             <div className='bg-orange-500 lg:p-20 p-10 flex flex-col gap-10  text-white '>
                   <h1 className='lg:text-6xl text-2xl font-bold '>PROJECTS & ACTIVITIES</h1>

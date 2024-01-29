@@ -4,6 +4,7 @@ import Home from './pages/home';
 import Blog from "./components/blogs/index.jsx"
 import About from "./components/layout/Aboutpage"
 import BlogList from "./components/blogs/bloglist.jsx"
+import "./App.css"
 // Lazy-loaded components
 const Signup = lazy(() => import("./pages/register.jsx"));
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from "../../pages/navbar"
-import ABoutbg from "../../assets/cl.png"
+import ABoutbg from "../../assets/success.webp"
 import Footer from "../../pages/footer"
 const Aboutpage = () => {
   return (
@@ -11,13 +11,13 @@ const Aboutpage = () => {
       </div>
       <Navbar />
 
-      <div className="w-screen  grid grid-flow-col grid-cols-2  lg:p-0 p-10">
+      <div className="w-screen lg:mb-10 grid grid-flow-col  grid-cols-1 lg:grid-cols-2 just  lg:p-20 p-10">
 
-        <div className="relative flex lg:h-screen  justify-end max-w-xl mx-auto xl:pr-32 lg:max-w-screen-xl  ">
+        <div className="relative flex lg:h-screen  justify-end w-auto mx-auto xl:pr-32   ">
 
 
 
-          <div className="mb-16 lg:pr-5 lg:max-w-lg lg:mb-0">
+          <div className="mb-16 lg:pr-5  lg:mb-0">
             <div className="max-w-xl mb-6">
               <div>
                 <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-accent-400 border-b-2 border-orange-500">
@@ -38,12 +38,12 @@ const Aboutpage = () => {
                 Cyber Scam.
               </p>
               <br />
-               <br />
+              <br />
 
               <p className="max-w-lg mb-6 font-sans text-xl lg:text-3xl font-bold tracking-tight text-gray-900 sm:text-2xl sm:leading-none">
                 Whose Chain We Have Created <span className='text-orange-500 '>
-                 CYBER CIVILIZED
-                INDIA
+                  CYBER CIVILIZED
+                  INDIA
                 </span>
 
               </p>
@@ -67,13 +67,13 @@ const Aboutpage = () => {
 
           </div>
         </div>
-          <div className="lg:w-1/2">
-    <img
-      src={ABoutbg}
-      className="w-full h-auto border-none"
-      alt="rahil foundation"
-    />
-  </div>
+        <div className="w-auto h-auto hidden lg:flex justify-center items-center">
+          <img
+            src={ABoutbg}
+            className="w-full h-auto  flex justify-center items-center border-none"
+            alt="rahil foundation"
+          />
+        </div>
       </div>
       <Footer />
     </div>
