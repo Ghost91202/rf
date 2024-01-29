@@ -11,7 +11,7 @@ const service = () => {
     return (
    <div className='w-full overflow-hidden h-auto lg:h-screen flex flex-col sm:flex-row'>
 
-    <div className='w-full sm:w-3/4 h-screen'>
+    <div className='w-full sm:w-3/4 h-auto   lg:h-screen'>
         <div className="p-10 md:p-20 lg:p-32 font-semibold text-balance">
             <h2 className="mb-4 text-2xl md:text-4xl xl:pt-20 tracking-tight font-bold text-black">Welcome to Rahil Foundation</h2>
             <p className="mb-4 xl:w-3/4">Where we embark on a transformative journey towards cyber literacy. At Rahil, we recognize the pivotal role of digital understanding in today's interconnected world. Our mission is to empower individuals with the knowledge and skills to navigate the digital landscape safely and responsibly.</p>

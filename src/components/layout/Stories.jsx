@@ -5,10 +5,10 @@ import { IoIosPlayCircle } from "react-icons/io";
 import bgimg from "../../assets/aboutimg1.jpg"
 const Stories = () => {
   return (
-    <div className='h-screen w-screen overflow-x-hidden'>
+    <div className='lg:h-screen w-screen overflow-x-hidden'>
     <div className='grid grid-flow-col  grid-cols-1 lg:grid-cols-2'>
 
-        <div className='bg-orange-500 h-screen flex p-10 items-center justify-center'>
+        <div className='bg-orange-500 h-auto lg:h-screen flex p-10 items-center justify-center'>
             <img src={img} alt="rahil foundation" className='ml-0 sm:ml-44 ' />
         </div>
 
