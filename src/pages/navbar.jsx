@@ -84,7 +84,7 @@ export default function Example( { currentPage } ) {
                   rel="noopener noreferrer"
                 >
                   <i className="fab fa-instagram text-xl leading-lg text-white opacity-75"></i>
-                  <span className=""><FaInstagram /></span>
+                  <span className="">In.<FaInstagram /></span>
                 </Link>
               </li>
               <li className="nav-item">
@@ -95,7 +95,7 @@ export default function Example( { currentPage } ) {
                   rel="noopener noreferrer"
                 >
                   <i className="fab fa-facebook text-xl leading-lg text-white opacity-75"></i>
-                  <span className=""><FaFacebook /></span>
+                  <span className="">Fb.<FaFacebook /></span>
                 </Link>
               </li>
               <li className="nav-item">
@@ -106,7 +106,7 @@ export default function Example( { currentPage } ) {
                   rel="noopener noreferrer"
                 >
                   <i className="fab fa-youtube text-2xl leading-xl text-white"></i>
-                  <span className=""><FaYoutube /></span>
+                  <span className="">Yt<FaYoutube /></span>
                 </Link>
               </li>
             </ul>
@@ -300,7 +300,7 @@ export default function Example( { currentPage } ) {
                   </div>
 
                 </div>
-                <button className="bg-blue-600 p-3 flex text-white hover:bg-white font-bold hover:text-red-600 border border-solid border-white">
+                <button className="border border-orange-600 p-3 flex text-orange-600  hover:bg-white font-bold hover:text-orange-600  border-solid ">
                   <FaHandHoldingHeart className="" />
                   Donate
                 </button>

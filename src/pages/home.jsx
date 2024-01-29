@@ -14,12 +14,12 @@ const Home = () => {
   return (
     <div className='w-screen overflow-x-hidden'>
       <Suspense fallback={<div>Loading...</div>}>
-        {/* <Navbar />
+        <Navbar />
         <Carousel />
         <Services />
         <How />
         <Ourstr />
-        <Mission/> */}
+        <Mission/>
         <Project/>
         <Faq />
         {/* <Newslatter /> */}

@@ -5,16 +5,16 @@ import { Link } from 'react-router-dom'
 const misson = () => {
     return (
         <div>
-            <div className='flex  lg:h-screen p-20 '>
-                <div className=' w-2/5'>
+            <div className='flex lg:flex-row flex-col lg:mb-10 lg:h-screen p-5 lg:p-20 '>
+                <div className=' lg:w-2/5'>
                     <img src={Mimg} alt="foundation" className=' ' />
                 </div>
-                <div className=' w-3/5 p-10 gap-5 flex flex-col'>
-                  <div className='gap-20 flex flex-col'>  <h1 className='lg:text-6xl font-bold '>
+                <div className=' lg:w-3/5 w-full p-10 gap-5 flex flex-col'>
+                  <div className=' gap-5 lg:gap-20 flex flex-col'>  <h1 className='lg:text-6xl text-2xl font-bold '>
                         <span className='text-orange-500'>OUR MISSION: </span>
                         TO CHANGE THE LIFE OF WHO HAVE NO HOPE
                     </h1>
-                    <p className='text-lg'>
+                    <p className=' lg:text-lg'>
                         The Vision of Rahil Foundation is that We will Join hands with the
                         Government and Make Everyone aware of Cyber Literacy. That is
                         Why Rahil Foundation Conducts Seminars in Schools and Colleges.
