@@ -11,7 +11,7 @@ const Aboutpage = () => {
       </div>
       <Navbar />
 
-      <div className="w-screen  flex lg:flex-row flex-col lg:p-0 p-10">
+      <div className="w-screen  grid grid-flow-col grid-cols-2  lg:p-0 p-10">
 
         <div className="relative flex lg:h-screen  justify-end max-w-xl mx-auto xl:pr-32 lg:max-w-screen-xl  ">
 

@@ -75,7 +75,7 @@ export default function Example( { currentPage } ) {
             }
             id="example-navbar-danger"
           >
-            <ul className="flex  flex-col lg:flex-row list-none gap-2 lg:ml-auto">
+            <ul className="flex  flex-col lg:flex-row list-none gap-5 lg:ml-auto">
               <li className="nav-item">
                 <Link
                   className="border-r-2 pr-6 py-2 flex items-center text-xl uppercase font-bold leading-snug text-white hover:opacity-75"

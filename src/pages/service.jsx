@@ -1,4 +1,4 @@
-import React from 'react'
+ import React from 'react'
 import Bgimg from "../assets/Blue Minimalist Creative Business Plan Presentation (169).jpg"
 import { BiSolidDonateHeart } from "react-icons/bi";
 import { FaHandshake } from "react-icons/fa6";

@@ -8,18 +8,21 @@ const Ourstr = lazy(() => import('../components/layout/Stories.jsx'));
 const Newslatter = lazy(() => import('./newslatter.jsx'));
 const Footer = lazy(() => import('./footer.jsx'));
 const Faq = lazy(() => import('../components/layout/faq.jsx'));
-
+const Mission = lazy(() => import('../components/layout/misson.jsx'));
+const Project = lazy(() => import('../components/layout/project.jsx'));
 const Home = () => {
   return (
     <div className='w-screen overflow-x-hidden'>
       <Suspense fallback={<div>Loading...</div>}>
-        <Navbar />
+        {/* <Navbar />
         <Carousel />
         <Services />
         <How />
         <Ourstr />
+        <Mission/> */}
+        <Project/>
         <Faq />
-        <Newslatter />
+        {/* <Newslatter /> */}
         <Footer />
       </Suspense>
     </div>
