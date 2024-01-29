@@ -17,17 +17,17 @@ const Contact = lazy(() => import("./components/layout/contactUs.jsx"));
 const Loading = lazy(() => import('./Loading.jsx'));
 
 const App = () => {
-  useEffect(() => {
-    const handleContextMenu = (event) => {
-      event.preventDefault();
-    };
+  // useEffect(() => {
+  //   const handleContextMenu = (event) => {
+  //     event.preventDefault();
+  //   };
 
-    window.addEventListener('contextmenu', handleContextMenu);
+  //   window.addEventListener('contextmenu', handleContextMenu);
 
-    return () => {
-      window.removeEventListener('contextmenu', handleContextMenu);
-    };
-  }, []);
+  //   return () => {
+  //     window.removeEventListener('contextmenu', handleContextMenu);
+  //   };
+  // }, []);
 
   return (
     <Router>

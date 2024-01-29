@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from "../../pages/navbar"
-
+import ABoutbg from "../../assets/cl.png"
 import Footer from "../../pages/footer"
 const Aboutpage = () => {
   return (
@@ -11,15 +11,9 @@ const Aboutpage = () => {
       </div>
       <Navbar />
 
-      <div className="relative flex flex-col-reverse px-4 py-6 mx-auto lg:block lg:flex-col lg:py-10 xl:py-24 md:px-8 sm:max-w-xl md:max-w-full">
-        <div className="z-0 fixed justify-center h-screen -mx-4  overflow-hidden lg:pt-24 lg:pb-16 lg:pr-8 xl:pr-0 lg:w-3/4  lg:absolute lg:justify-end lg:bottom-0 lg:-left-32  lg:-top-0 ">
-          <img
-            src="https://kitwind.io/assets/kometa/laptop.png"
-            className="object-cover object-right w-3/4  h-3/4 lg:w-3/4 lg:h-full"
-            alt="rahil foundation"
-          />
-        </div>
-        <div className="relative flex lg:h-screen  justify-end max-w-xl mx-auto xl:pr-32 lg:max-w-screen-xl overflow-y-scroll ">
+      <div className="w-screen  flex lg:flex-row flex-col p-20">
+
+        <div className="relative flex lg:h-screen  justify-end max-w-xl mx-auto xl:pr-32 lg:max-w-screen-xl  ">
 
 
 
@@ -30,13 +24,13 @@ const Aboutpage = () => {
                   Rahil foundation
                 </p>
               </div>
-              <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
+              <h2 className="max-w-lg mb-6 font-sans text-xl lg:text-3xl  font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
                 About Us :-
                 <br className="hidden md:block" />
 
 
               </h2>
-              <p className="text-base text-gray-700 md:text-lg">
+              <p className="text-base text-gray-700 text-justify md:text-lg">
                 Rahil Foundation is a Non Governmental Organization. It has
                 been Established from November 2023 in Kanpur, Uttar
                 Pradesh and The Aim is to make People Aware about Cyber
@@ -44,18 +38,19 @@ const Aboutpage = () => {
                 Cyber Scam.
               </p>
               <br />
-              <p className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-2xl sm:leading-none">
+               <br />
+              
+              <p className="max-w-lg mb-6 font-sans text-xl lg:text-3xl font-bold tracking-tight text-gray-900 sm:text-2xl sm:leading-none">
                 Whose Chain We Have Created <span className='text-orange-500 '>
                  CYBER CIVILIZED
                 INDIA
                 </span>
 
               </p>
-              <br />
 
-              <div>
+              <div className='text-justify'>
 
-                <p className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-2xl sm:leading-none">
+                <p className="max-w-lg mb-6 font-sans text-xl lg:text-3xl font-bold tracking-tight text-gray-900 sm:text-2xl sm:leading-none ">
                   Rahil Foundation
                 </p>
                 Conducts Workshops, Training sessions,
@@ -72,6 +67,13 @@ const Aboutpage = () => {
 
           </div>
         </div>
+          <div className="lg:w-1/2">
+    <img
+      src={ABoutbg}
+      className="w-full h-auto border-none"
+      alt="rahil foundation"
+    />
+  </div>
       </div>
       <Footer />
     </div>
