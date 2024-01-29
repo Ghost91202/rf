@@ -16,11 +16,11 @@ export default function Example( { currentPage } ) {
   const [ navbarOpen, setNavbarOpen ] = useState( false );
 
   const navigation = [
-    { name: 'Home', href: '/', current: currentPage === 'Home' },
-    { name: 'About', href: '/about', current: currentPage === 'About' },
-    { name: 'Team', href: '/team', current: currentPage === 'Team' },
-    { name: 'Blog', href: '/Blog', current: currentPage === 'Blog   ' },
-    { name: 'Contact', href: '/contact', current: currentPage === 'Contact' },
+    { name: 'Home', to: '/', current: currentPage === 'Home' },
+    { name: 'About', to: '/about', current: currentPage === 'About' },
+    { name: 'Team', to: '/team', current: currentPage === 'Team' },
+    { name: 'Blog', to: '/blog', current: currentPage === 'Blog  ' },
+    { name: 'Contact', to: '/contact', current: currentPage === 'Contact' },
   ];
 
   const classNames = ( ...classes ) => {
@@ -313,24 +313,23 @@ export default function Example( { currentPage } ) {
               </div>
             </div>
 
-            <Disclosure.Panel className="sm:hidden">
-              <div className="space-y-1 px-2 pb-3 pt-2">
-                {navigation.map( ( item ) => (
-                  <Disclosure.Button
-                    key={item.name}
-                    as="a"
-                    to={item.to}
-                    className={classNames(
-                      item.current ? 'bg-gray-900 text-white' : 'text-gray-700 hover:bg-gray-700 hover:text-white',
-                      'block px-3 py-2 text-base font-medium'
-                    )}
-                    aria-current={item.current ? 'page' : undefined}
-                  >
-                    {item.name}
-                  </Disclosure.Button>
-                ) )}
-              </div>
-            </Disclosure.Panel>
+         <Disclosure.Panel className="sm:hidden">
+                  <div className="space-y-1 px-2 pb-3 pt-2">
+                    {navigation.map((item) => (
+                      <Link
+                        key={item.name}
+                        to={item.to}
+                        className={classNames(
+                          item.current ? 'bg-gray-900 text-white' : 'text-gray-700 hover:bg-gray-700 hover:text-white',
+                          'block px-3 py-2 text-base font-medium'
+                        )}
+                        aria-current={item.current ? 'page' : undefined}
+                      >
+                        {item.name}
+                      </Link>
+                    ))}
+                  </div>
+                </Disclosure.Panel>
           </>
         )}
       </Disclosure>
