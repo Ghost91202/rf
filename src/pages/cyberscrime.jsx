@@ -65,7 +65,7 @@ const Accordion = () => {
     <section className="w-full items-center overflow-hidden">
       {/* <Navbar/> */}
       <div className=" w-screen p-20 flex justify-center  items-center">
-        <div className="bg-slate-100 shadow-xl gap-5 flex rounded-lg flex-col p-5 w-3/4">
+        <div className=" bg-lime-50 shadow-xl gap-5 flex rounded-lg flex-col p-5 w-3/4">
           <div className="flex flex-col gap-5 ">
             <h1 className="lg:text-4xl font-semibold">Learn About CyberCrime</h1>
           <p>In general cybercrime may be defined as “Any unlawful act where computer or communication device or computer network is used to commit or facilitate the commission of crime”.
@@ -76,28 +76,149 @@ const Accordion = () => {
           <div className="flex flex-col gap-2 border border-gray-300 p-4 rounded-md">
             <div className="overflow-y-auto">
               <CyberCrime
-                header="Why India Needs Cyber Literacy?"
-                text="India needs Cyber Literacy, as highlighted by Rahil Foundation, to increase individuals with the knowledge and skills to navigate the digital world securely. It promotes awareness, responsible online behavior, and protection against developing cyber threats."
+                header="1. Child Pornography/ Child sexually abusive material (CSAM)"
+                text="All media that displays a child being harmed or sexually abused in any way is considered child sexually harmful material (CSAM). Publication or transmission of content that depicts children in sexually explicit acts, etc. in electronic form is banned by Section 67(B) of the IT Act."
               />
               <CyberCrime
-                header="Have You Installed Reputable Antivirus and Anti-malware Software on Your Devices and Do You Perform Regular Scans?"
-                text="Rahil Foundation recommends creating robust passwords using a mix of letters, numbers, and symbols, emphasizing the avoidance of easily guessable information like birthdays. They stress the importance of regularly updating passwords and avoiding reuse across accounts, aiming to boost Cyber Literacy for effective online account protection."
+                header="2. Cyber Bullying"
+                text="A kind of cyberBullying or abuse that includes the use of a computer, smartphone, laptop, or other type of electronic device."
               />
               <CyberCrime
-                header="Cases of Cyber Crimes in India?"
-                text="Rahil Foundation notes a surge in cybercrime cases in India, attributing it to the expanding digital landscape and increased internet usage. Common issues include identity theft, financial fraud, and unauthorized data access. Despite law enforcement and cybersecurity efforts, public awareness."
+                header="3. Cyber stalking"
+                text="CyberStalking is defined as using electronic communication to follow someone, or persistently trying to get in touch with someone to set up personal interaction despite that person's obvious lack of interest; it also includes remaining an eye on a person using email, the internet, or any other electronic communication channel."
               />
               <CyberCrime
-                header="Is Artificial Intelligence Helpful or Harmful for Me?"
+                header="4. Cyber Grooming"
                 text="AI's impact is dual, providing assistance in security and problem-solving but posing risks like privacy threats and biased application. Whether AI is helpful or harmful relies on responsible development, implementation, and regulation, emphasizing ethical considerations to maximize benefits while minimizing potential risks."
               />
               <CyberCrime
-                header="How to Create and Manage Strong, Unique Passwords for Your Accounts?"
-                text="Rahil Foundation strongly recommends installing reliable antivirus and anti-malware software for fundamental cyber defense. Rahil Foundation's commitment to Cyber Literacy highlights proactive measures, empowering individuals to safeguard their digital environments."
+                header="5. Online Job Fraud"
+                text="An attempt to deceive candidates by offering them a false sense of hope or a salary that is greater is known as online job fraud."
               />
               <CyberCrime
-                header="How long does it take to deliver your first blog post?"
-                text="It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post."
+                header="6. Online Sextortion"
+                text="Online sextortion is when someone requires money, sexual favors, or pictures of themselves as compensation for not giving away sensitive or private information that may be shared online."
+              />
+              <CyberCrime
+                header="7. Vishing"
+                text="Vishing refers to the attempt made by fraudsters to get personal information over the phone by calling victims' ID, CVV, ATM PIN, Net Banking password, OTP, and card expiration date, among other details.
+"
+              />
+              <CyberCrime
+                header="8. Sexting"
+                text="The act of exchanging sexually suggestive digital photos, videos, texts, or emails—usually over a cell phone—is known as sexting.
+"
+              />
+              <CyberCrime
+                header="9. Smshing"
+                text="Smishing is a kind of fraud where criminals utilize text messages sent to victims' phones to trick them into returning calls, going to phony websites, or downloading dangerous software.
+"
+              />
+              <CyberCrime
+                header="10. SIM Swap Scam"
+                text="When scammers are able to use a registered mobile number to illegally obtain a new SIM card through the mobile service provider, it's known as a SIM swap scam. They receive notifications and a One Time Password (OTP), which is necessary in order to conduct financial transactions using the victim's bank account, with the use of this new SIM card. SIM Swap is the term for obtaining a new SIM card through illicit means using a registered cellphone number.
+"
+              />
+              <CyberCrime
+                header="11. Debit/Credit Card Fraud
+"
+                text="Fraud involving credit or debit cards occurs when someone uses someone else's card details without authorization in order to make transactions or take money out of it."
+              />
+              <CyberCrime
+                header="12. Impersonation and Identity Theft
+"
+                text="The act of fraudulently or dishonestly using another person's password, electronic signature, or any other distinctive identifying trait is known as impersonation and identity theft.
+"
+              />
+              <CyberCrime
+                header="13. Phishing
+"
+                text="Phishing is a kind of fraud in which emails that seem authentic are used to steal personal information, including Customer ID, IPIN, Credit/Debit Card number, Card expiration date, CVV number, etc.
+"
+              />
+              <CyberCrime
+                header="14. Spamming
+"
+                text="Delivering unsolicited commercial messages by email, SMS, MMS, or any other comparable electronic messaging medium is known as spamming. They might attempt to fool the patient into disclosing bank account or credit card information, or they might try to convince him to visit a website where he can make transactions.
+"
+              />
+              <CyberCrime
+                header="15. Ransomware
+"
+                text='Computer malware known as "ransomware" encrypts data and media on communication devices such as laptops, desktop computers, mobile phones, and other devices, thereby posing a threat to sensitive data. In order to get his device decrypted, the victim is required to pay the stipulated ransom.
+
+'
+              />
+              <CyberCrime
+                header="16. Virus, Worms & Trojans
+"
+                text=" A computer virus is a program designed to infiltrate your system, change or corrupt your data, and then duplicate itself.
+Malicious programs known as worms replicate themselves repeatedly on local drives, network shares, and other locations.
+A virus is not a Trojan horse. It is a malicious program that appears to be an official application. Trojan horses can be just as destructive as viruses, yet they cannot multiply themselves. Trojan horses allow nefarious individuals or programs to enter your computer through a backdoor, making it possible for private and sensitive data to be stolen.
+"
+              />
+              <CyberCrime
+                header="17. Data Breach
+
+"
+                text="An incident where information is accessed without authority is called a data breach.
+"
+              />
+              <CyberCrime
+                header="18. Denial Of Services /Distributed DoS
+
+"
+                text="Attacks known as denial of service (DoS) are designed to prevent users from accessing computer resources without the owner's or any other person in control of the computer, computer system, or computer network's consent.
+An effort to render an online service inaccessible through a denial of service (DDoS) attack involves flooding the system with traffic from several sources.
+
+"
+              />
+              <CyberCrime
+                header="19. Website Defacement
+
+"
+                text="Website defacement speaks to an attack that aims to alter a website's appearance or making it inoperable. The attacker might publish lewd, aggressive, and sexual pictures, texts, videos, etc.
+
+"
+              />
+              <CyberCrime
+                header="20. Cyber-Squatting
+
+"
+                text="The act of registering, trading, or utilizing a domain name with the intention of making money from the goodwill of another person's trademark is known as 'cyber-squatting.'"
+
+
+              />
+              <CyberCrime
+                header="21. Pharming
+
+"
+                text="Pharming is a cyberattack that aims to divert visitors from one legitimate website to a fraudulent one.
+
+"
+              />
+              <CyberCrime
+                header="22. Cryptojacking
+
+"
+                text='The illicit extraction of cryptocurrency using computer resources is known as "cryptojacking."
+'
+              />
+              <CyberCrime
+                header="23. Online Drug Trafficking
+
+"
+                text=" The illegal sale, transportation, or importation of illegal controlled substances, such as heroin, cocaine, marijuana, or other illegal drugs, over internet methods is known as online drug trafficking.
+
+"
+              />
+              <CyberCrime
+                header="24. Espionage
+
+"
+                text=" The act of obtaining data and information without the owner's permission or knowledge is known as spying.
+
+"
               />
             </div>
           </div>

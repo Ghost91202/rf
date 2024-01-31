@@ -1,0 +1,9 @@
+.wave-animation:hover {
+    animation: wave 0.5s infinite alternate;
+}
+
+@keyframes wave {
+    to {
+        transform: translateY(-3px);
+    }
+}

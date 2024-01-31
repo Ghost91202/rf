@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-
+import "./cyber.css"
 const cyber = () => {
     return (
         <div className='p-20 w-screen'>
@@ -9,14 +9,18 @@ const cyber = () => {
                 <div className='flex flex-col gap-5 lg:p-10'>
                     <p>This portal is an initiative of Government of India to facilitate victims/complainants to report cyber crime complaints online. This portal caters to complaints pertaining to cyber crimes only with special focus on cyber crimes against women and children. Complaints reported on this portal are dealt by law enforcement agencies/ police based on the information available in the complaints. It is imperative to provide correct and accurate details while filing complaint for prompt action.</p>
                     <p>Please contact local police in case of an emergency or for reporting crimes other than cyber crimes. National police helpline number is 112. National women helpline number is 181 and Cyber Crime Helpline is 1930.</p>
-                     <div className='flex  justify-between w-full'>
-                    <h1 className=' bg-orange-600 text-white rounded-xl p-2 font-semibold '>
-                        <Link to="/CyberCrime">learn about cyber crime</Link>
-                    </h1>
-                    <h1 className=' bg-orange-600  text-white rounded-xl p-2 font-semibold '>
-                        <Link to="/CyberCrime">File your complain</Link>
-                    </h1>
-                </div>
+                    <div className='flex  justify-between w-full'>
+                        <h1 className=' bg-orange-600 text-white rounded-xl p-2 font-semibold '>
+                            <Link to="/CyberCrime" className='wave-animation hover:bg-orange-700 active:bg-orange-800 focus:outline-none focus:ring focus:border-orange-300 bg-orange-600 text-white rounded-xl p-2 font-semibold transition-all duration-300'>
+  Learn about cyber crime
+</Link>
+                        </h1>
+                        <h1 className=' bg-orange-600  text-white rounded-xl p-2 font-semibold '>
+<Link to="/CyberCrime" className='wave-animation hover:bg-orange-700 active:bg-orange-800 focus:outline-none focus:ring focus:border-orange-300 bg-orange-600 text-white rounded-xl p-2 font-semibold transition-all duration-300'>
+  File your complaint
+</Link>
+                        </h1>
+                    </div>
                 </div>
 
             </div>
