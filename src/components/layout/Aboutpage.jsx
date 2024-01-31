@@ -2,6 +2,7 @@ import React from 'react'
 
 import ABoutbg from "../../assets/success.webp"
 import Footer from "../../pages/footer"
+import { Link } from 'react-router-dom'
 const Aboutpage = () => {
   return (
     <div>
@@ -31,19 +32,14 @@ const Aboutpage = () => {
 
               </h2>
               <p className="text-base text-gray-700 text-justify md:text-lg">
-                Rahil Foundation is a Non Governmental Organization. It has
-                been Established from November 2023 in Kanpur, Uttar
-                Pradesh and The Aim is to make People Aware about Cyber
-                Literacy so Kindly Join Us so that You can also be Aware of
-                Cyber Scam.
+                Rahil Foundation is a Non-Governmental Organization which is working for Cyber Literacy and I assume we are probably the only one who is working for it
               </p>
               <br />
               <br />
 
-              <p className="max-w-lg mb-6 font-sans text-xl lg:text-3xl font-bold tracking-tight text-gray-900 sm:text-2xl sm:leading-none">
-                Whose Chain We Have Created <span className='text-orange-500 '>
-                  CYBER CIVILIZED
-                  INDIA
+              <p className=" max-w-lg mb-6 font-sans text-xl flex flex-col lg:text-3xl font-bold tracking-tight text-gray-900 sm:text-2xl sm:leading-none">
+                Our motto is <span className='text-orange-500 '>
+                  Cyber Civilized India.
                 </span>
 
               </p>
@@ -53,14 +49,14 @@ const Aboutpage = () => {
                 <p className="max-w-lg mb-6 font-sans text-xl lg:text-3xl font-bold tracking-tight text-gray-900 sm:text-2xl sm:leading-none ">
                   Rahil Foundation
                 </p>
-                Conducts Workshops, Training sessions,
-                and Awareness Programs to Increase Basic Computer Skills,
-                Teach Internet Safety, and In still Responsible Online
-                Behaviour. Through its Initiatives, the Foundation Aims to
-                bridge the Digital Divide and ensure that people, Especially in
-                Underserved Communities, have the tools to protect
-                themselves in the Digital Age.
-              </div>
+                Rahil Foundation was Establish on 23rd November 2023 in Kanpur, Uttar Pradesh. And if you are wondering what ‘Rahil’ means, then let me tell you what it is?
+
+                <br />‘Rahil’ is an Urdu word, which means ‘The one who is guiding the way’ AKA ‘मार्गदर्शक’.
+
+                It was suggested by our founder
+                <br />
+                <Link to="https://www.linkedin.com/in/nikhil-pandey-23aa76123/
+" className='font-semibold' target='blank'>Mr. Nikhil Pandey.</Link>                           </div>
               <br />
 
             </div>
