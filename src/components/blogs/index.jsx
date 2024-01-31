@@ -3,7 +3,6 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import blogData from './data/blogData';
 
-import Navbar from '../../pages/navbar';
 import Footer from '../../pages/footer.jsx';
 
 const BlogCoverList = () => {
@@ -26,7 +25,7 @@ const BlogCoverList = () => {
 
   return (
     <div>
-<Navbar />
+
   <div className="min-h-screen w-screen overflow-hidden flex flex-col justify-center items-center">
 
   <div className="p-4 md:p-8 mx-auto max-w-screen-lg bg-opacity-75 rounded-lg shadow-lg">

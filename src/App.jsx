@@ -8,7 +8,7 @@ import Cybercrime from "./pages/cyberscrime"
 import "./App.css"
 // Lazy-loaded components
 const Signup = lazy(() => import("./pages/register.jsx"));
-
+import Navbar from "./pages/navbar"
 const Blog2 = lazy(() => import("./components/blogs/blog2"));
 
 const Team = lazy(() => import("./components/layout/Team"));
@@ -17,7 +17,7 @@ const Navbar2 = lazy(() => import("./pages/navbar"));
 const BlogForm = lazy(() => import('./components/blogs/contentpost.jsx'));
 const Contact = lazy(() => import("./components/layout/contactUs.jsx"));
 const Loading = lazy(() => import('./Loading.jsx'));
-
+import WhatsAppButton from './components/wattsbutton';
 const App = () => {
   // useEffect(() => {
   //   const handleContextMenu = (event) => {
@@ -33,6 +33,7 @@ const App = () => {
 
   return (
     <Router>
+      <Navbar/>
       <Routes className="md:overflow-hidden overflow-hidden w-full">
         <Route path="/" element={<Home />} />
         <Route path="/signup" element={<Suspense fallback={<Loading />}><Signup /></Suspense>} />
@@ -45,7 +46,9 @@ const App = () => {
         <Route path="/Team" element={<Team />} />
         <Route path="/navbar" element={<Navbar2 />} />
         <Route path="/ContactUS" element={<Contact />} />
+
       </Routes>
+      <WhatsAppButton/>
     </Router>
   );
 };

@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from "../../pages/navbar"
+
 import ABoutbg from "../../assets/success.webp"
 import Footer from "../../pages/footer"
 const Aboutpage = () => {
@@ -9,7 +9,7 @@ const Aboutpage = () => {
 
         {/* Your page content */}
       </div>
-      <Navbar />
+
 
       <div className="w-screen lg:mb-10 grid grid-flow-col  grid-cols-1 lg:grid-cols-2 just  lg:p-20 p-10">
 

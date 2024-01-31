@@ -16,7 +16,7 @@ const Home = () => {
   return (
     <div className='w-screen overflow-x-hidden'>
       <Suspense fallback={<div>Loading...</div>}>
-        <Navbar />
+      
         <Carousel />
         <Services />
         <Cyber/>
