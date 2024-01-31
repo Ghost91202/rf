@@ -4,6 +4,7 @@ import Home from './pages/home';
 import Blog from "./components/blogs/index.jsx"
 import About from "./components/layout/Aboutpage"
 import BlogList from "./components/blogs/bloglist.jsx"
+import Cybercrime from "./pages/cyberscrime"
 import "./App.css"
 // Lazy-loaded components
 const Signup = lazy(() => import("./pages/register.jsx"));
@@ -39,6 +40,7 @@ const App = () => {
         <Route path="/blog/:id" element={<Suspense fallback={<Loading />}><BlogList /></Suspense>} />
         <Route path="/blog/phishing_attacks" element={<Suspense fallback={<Loading />}><Blog2 /></Suspense>} />
         <Route path="/About" element={<About />} />
+        <Route path="/CyberCrime" element={<Cybercrime />} />
         <Route path="/add" element={<BlogForm />} />
         <Route path="/Team" element={<Team />} />
         <Route path="/navbar" element={<Navbar2 />} />

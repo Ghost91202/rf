@@ -1,6 +1,8 @@
 import React, { lazy, Suspense } from 'react';
 
 const Navbar = lazy(() => import('./navbar.jsx'));
+
+const Cyber = lazy(() => import('../components/layout/cyber.jsx'));
 const Carousel = lazy(() => import('./carousal.jsx'));
 const Services = lazy(() => import('./service.jsx'));
 const How = lazy(() => import('../components/layout/howto.jsx'));
@@ -17,6 +19,7 @@ const Home = () => {
         <Navbar />
         <Carousel />
         <Services />
+        <Cyber/>
         <How />
         <Ourstr />
         <Mission/>

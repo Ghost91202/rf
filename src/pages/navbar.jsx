@@ -106,7 +106,7 @@ export default function Example( { currentPage } ) {
                   rel="noopener noreferrer"
                 >
                   <i className="fab fa-youtube text-2xl leading-xl text-white"></i>
-                  <span className="">Yt.<FaYoutube /></span>
+                  <span className="">Yt.  <FaYoutube /></span>
                 </Link>
               </li>
             </ul>
