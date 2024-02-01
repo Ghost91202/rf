@@ -6,7 +6,7 @@ import cyber3 from "../assets/3.jpg"
 import cyber4 from "../assets/4.jpg"
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-
+import "../slider.css"
 const ImageSlider = () => {
     const settings = {
         dots: true,
@@ -40,20 +40,20 @@ const ImageSlider = () => {
     };
 
     return (
-      <div className='w-screen  overflow-hidden'>
+      <div className='w-screen h-1/2 overflow-hidden'>
 
     <Slider {...settings}>
       <div>
-        <img src={cyber1} alt="rahil foundation" className='w-screen'/>
+        <img src={cyber1} alt="rahil foundation" className='w-screen h-1/2  sliderimg '/>
       </div>
       <div>
-        <img src={cyber2} alt="rahil foundation" className='w-screen'/>
+        <img src={cyber2} alt="rahil foundation" className='w-screen h-1/2  sliderimg'/>
       </div>
       <div>
-        <img src={cyber3} alt="rahil foundation" className='w-screen'/>
+        <img src={cyber3} alt="rahil foundation" className='w-screen h-1/2  sliderimg'/>
       </div>
       <div>
-        <img src={cyber4} alt="rahil foundation" className='w-screen'/>
+        <img src={cyber4} alt="rahil foundation" className='w-screen h-1/2  sliderimg'/>
       </div>
       {/* Add more slides as needed */}
     </Slider>

@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { Helmet } from 'react-helmet';
 import { FaHandPointRight } from "react-icons/fa6";
 import Footer from "./footer";
+import cyberimg from "../assets/cyber.jpg"
 const CyberCrime = ( { header, text } ) => {
   const [ active, setActive ] = useState( false );
 
@@ -64,6 +65,7 @@ const Accordion = () => {
   return (
     <section className="w-full items-center overflow-hidden">
       {/* <Navbar/> */}
+      <img src={cyberimg} alt ="cyber crimes blogs" className="w-screen lg:h-96"/>
       <div className=" w-screen p-20 flex justify-center  items-center">
         <div className=" bg-lime-50 shadow-xl gap-5 flex rounded-lg flex-col p-5 w-3/4">
           <div className="flex flex-col gap-5 ">
