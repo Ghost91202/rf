@@ -166,6 +166,34 @@ Report any unusual activity to OLX for further Investigation.
     imgurl: "https://i.pinimg.com/736x/be/10/5a/be105a358565edd621a91328f2860a36.jpg",
 
     relatedBlogs: [ 1, 3 ],
+  },
+  {
+    id: 4,
+    coverImageUrl: "https://i.pinimg.com/736x/ab/36/56/ab365610eaa86a33fa46185a3cd429d3.jpg",
+
+    title: " Charity Scam ",
+    Heading1: `What is Charity Scam ?`,
+    para1: `In our country where being kind and generous is a good thing, it's sad to know that some people are taking advantage of others' kindness. Charity scams have become an unfortunate reality in today’s generation. In this blog, we'll explore the nature of charity scams and provide you some helpful tips on how to protect yourself and your donations.`,
+    para2: `Understanding Charity Scams: Concern of Frauds on OLX. Scammers, taking Advantage of
+Unsuspecting users, Employ various tactics to deceive and scam
+them.`,
+
+    para3: `Fake charities pretend to be real and caring groups that help good causes. Tricky people take advantage of our feelings by telling sad stories and showing touching pictures to make us feel emotional. They might try to trick us through emails, social media, phone calls, or even when they approach us in person. Be careful and check before you donate to make sure it's a real and honest charity.`,
+    Heading2: `Know How it Happened`,
+    para4: `
+There are some ways to identify these fake charities;
+Scammers who use forceful tactics, pushing you to donate right away without giving you time to check. Real charities usually don't call or send unexpected emails asking for money, so be cautious if you get surprise requests. Watch out if scammers ask for payment in tricky ways like Wire Transfers, Gift Cards or Cryptocurrency. Genuine Charities are open about their goals, finances and how donations are used. Stay away from those that won't give clear information. Always take your time and be sure before giving money. `,
+
+
+    Heading3: `Verify Charities before donation: `,
+    content1: `Make sure a charity is real by checking if it's registered with the government. You can find this on official charity websites. Look for people’s reviews and news about the charity to make sure it's known for doing good things. Also, check if they share how they use donations. Use websites like Charity Navigator or GuideStar to see if a charity is open about their finances. It's important to be sure your money goes to a trustworthy cause.`,
+
+    para5: `It's sad that there are fake charities, but knowing about them helps us do good without getting tricked. If we stay watchful, check charities and give money safely, we can make sure our kindness helps those who really need it. And with Rahil Foundation, you can forget about getting robbed online.
+    `,
+
+    imgurl: "https://i.pinimg.com/736x/ab/36/56/ab365610eaa86a33fa46185a3cd429d3.jpg",
+
+    relatedBlogs: [ 1, 3 ],
   }
 
 ];

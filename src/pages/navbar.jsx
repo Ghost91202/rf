@@ -169,7 +169,7 @@ export default function Example( { currentPage } ) {
                               Who we are
                             </Link>
                             <Link
-                              to="/who_we_are"
+                              to="/what_we_do"
                               className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                               role="menuitem"
                             >

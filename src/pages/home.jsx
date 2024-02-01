@@ -2,6 +2,8 @@ import React, { lazy, Suspense } from 'react';
 
 
 
+const Testi = lazy( () => import( '../components/layout/testi.jsx' ) );
+
 const Cyber = lazy( () => import( '../components/layout/cyber.jsx' ) );
 const News = lazy( () => import( '../components/layout/news.jsx' ) );
 const Carousel = lazy( () => import( './carousal.jsx' ) );
@@ -26,6 +28,7 @@ const Home = () => {
         <Mission/>
         <Project />
         <News />
+        <Testi/>
         <Faq />
         {/* <Newslatter /> */}
         <Footer />

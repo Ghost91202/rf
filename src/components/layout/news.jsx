@@ -1,6 +1,7 @@
 import React from 'react'
 import { GoArrowDown } from "react-icons/go";
 import newsimg from "../../assets/news1.jpg"
+import { Link } from "react-router-dom"
 import News2img from "../../assets/news3.jpg"
 const news = () => {
   return (
@@ -26,7 +27,8 @@ const news = () => {
                       <h1>OF CYBER SCAMS</h1>
                   </div>
                   <GoArrowDown className='text-9xl text-orange-600 font-serif flex justify-center' />
-                   <h1 className='text-xl lg:text-2xl font-semibold lg:font-bold text-white bg-orange-600 p-2 rounded-2xl'>Read all the News</h1>
+                  <Link to="/blog">
+                   <h1 className='text-xl lg:text-2xl font-semibold lg:font-bold text-white bg-orange-600 p-2 rounded-2xl'>Read all the News</h1></Link>
 
               </div>
              <div className='flex flex-col p-10'>
