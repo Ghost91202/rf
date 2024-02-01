@@ -4,6 +4,9 @@ import React, { lazy, Suspense } from 'react';
 
 const Testi = lazy( () => import( '../components/layout/testi.jsx' ) );
 
+const Cards = lazy( () => import( '../components/layout/cards.jsx' ) );
+const Scroll = lazy( () => import( '../components/layout/scroll.jsx' ) );
+
 const Cyber = lazy( () => import( '../components/layout/cyber.jsx' ) );
 const News = lazy( () => import( '../components/layout/news.jsx' ) );
 const Carousel = lazy( () => import( './carousal.jsx' ) );
@@ -28,7 +31,9 @@ const Home = () => {
         <Mission/>
         <Project />
         <News />
-        <Testi/>
+        <Testi />
+        {/* <Cards/> */}
+        {/* <Scroll/> */}
         <Faq />
         {/* <Newslatter /> */}
         <Footer />
