@@ -41,7 +41,7 @@ export default function Example( { currentPage } ) {
               </Link>
               <Link
                 className="font leading-relaxed flex whitespace-nowrap uppercase text-white"
-                to="tel:+918543810264"
+                to="tel:+919935201079"
               >
                 <span>
                   <FaPhone className="mt-1" />

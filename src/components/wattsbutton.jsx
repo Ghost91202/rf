@@ -29,11 +29,11 @@ const WhatsAppButton = () => {
           >
          <Link
 
-                to="tel:+918543810264"
+                to="tel:+919935201079"
               >
 
                  <IoLogoWhatsapp className="lg:text-4xl"/>
-             
+
               </Link>
 
       </animated.button>
