@@ -2,7 +2,7 @@
 const blogData = [
   {
     id: 1,
-    coverImageUrl: "https://cdn.ttgtmedia.com/rms/onlineimages/what_is_a_blog_used_for-f_mobile.png",
+    coverImageUrl: "https://i.pinimg.com/736x/9c/30/da/9c30da44ddb2f1cc7278b48ac479a24c.jpg",
     title: "PHISHING AWARENESS",
     para1: `Rahil Foundation is at the Frontline of Promoting Cyber Literacy,
     with a Particular Focus on raising Awareness about Phishing – a
@@ -38,7 +38,7 @@ const blogData = [
   },
   {
     id: 2,
-    coverImageUrl: "https://cdn.ttgtmedia.com/rms/onlineimages/what_is_a_blog_used_for-f_mobile.png",
+    coverImageUrl: "https://i.pinimg.com/736x/41/90/43/4190431a07b652d211460c9a16fcdd1c.jpg",
 
     title: "Social Media Safety",
     para1: `As Our Lives Increasingly Intertwine with the Digital Nation, Rahil
@@ -79,7 +79,7 @@ conversations.`,
   },
   {
     id: 3,
-    coverImageUrl: "https://cdn.ttgtmedia.com/rms/onlineimages/what_is_a_blog_used_for-f_mobile.png",
+    coverImageUrl: "https://i.pinimg.com/736x/7c/d6/fa/7cd6fa9925405dc83fa0a531cbcd468b.jpg",
 
     title: "OLX USERS FRAUD",
     Heading1: `Harshita Kejriwal OLX User Scam from UPI `,
