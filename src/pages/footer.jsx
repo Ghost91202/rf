@@ -98,7 +98,8 @@ const Footer = () => {
                     <Map/>
             </div>
             <div className="flex mt-8 flex-col md:flex-row md:justify-between">
-                <p className="w-full md:w-2/3 text-gray-400">To ensure that all Wikipedia content is verifiable, anyone may question an uncited claim. If your work has been tagged</p>
+                <p className="w-full md:w-2/3 text-gray-400">1st floor, 783/109, W-1, Juhi Kalan, Saket Nagar, Kanpur, Uttar Pradesh 208011
+</p>
                 <div className="w-44 pt-6 md:pt-0">
                     <Link className="bg-orange-500 justify-center text-center rounded-lg shadow px-10 py-3 flex items-center">Contact US</Link>
                 </div>
