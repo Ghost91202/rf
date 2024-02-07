@@ -90,9 +90,9 @@ const Footer = () => {
 //             </div>
 
         //         </div>
-        <div className="w-full min-h-screen flex items-center justify-center pt-6 bg-black">
+        <div className="w-full h-auto flex items-center justify-center pt-6 bg-black">
         <div className="md:w-2/3 w-full px-4 text-white flex flex-col">
-            <div className="w-full flex lg:flex-row flex-col text-7xl font-bold">
+            <div className="w-full flex lg:flex-row flex-col text-4xl lg:text-7xl font-bold">
                 <h1 className="w-full md:w-2/3">How can we help you. get
                         in touch</h1>
                     <Map/>
@@ -101,7 +101,7 @@ const Footer = () => {
                 <p className="w-full md:w-2/3 text-gray-400">1st floor, 783/109, W-1, Juhi Kalan, Saket Nagar, Kanpur, Uttar Pradesh 208011
 </p>
                 <div className="w-44 pt-6 md:pt-0">
-                    <Link className="bg-orange-500 justify-center text-center rounded-lg shadow px-10 py-3 flex items-center">Contact US</Link>
+                    <Link className="bg-orange-500 justify-center text-center rounded-lg shadow px-5 lg:px-10 lg:py-3 py-2 flex items-center">Contact US</Link>
                 </div>
             </div>
             <div className="flex flex-col">

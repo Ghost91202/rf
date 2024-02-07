@@ -32,8 +32,8 @@ const blogData = [
     Our comprehensive Approach includes:
     `,
     content: `In an increasingly interconnected world, where our personal and professional lives revolve around digital devices, the importance of safeguarding our data cannot be overstated. Rahil Foundation is committed to promoting digital security literacy, and in this comprehensive guide, we will explore essential practices to keep your data secure on both computers and mobile devices. If you are interested in how to keep your data secure, kindly read our page Understanding the Importance of Data Security.`,
-    imgurl: "https://cdn.ttgtmedia.com/rms/onlineimages/what_is_a_blog_used_for-f_mobile.png",
-    videoUrl: "https://www.youtube.com/embed/your_video_id", // Replace with your actual video URL
+    imgurl: "https://i.pinimg.com/736x/13/9f/5b/139f5b984a731eab7b4704f5030777e8.jpg",
+    // videoUrl: "https://www.youtube.com/embed/your_video_id", // Replace with your actual video URL
     relatedBlogs: [ 2, 3 ],
   },
   {
@@ -74,7 +74,7 @@ conversations.`,
       `,
     content: `In an increasingly interconnected world, where our personal and professional lives revolve around digital devices, the importance of safeguarding our data cannot be overstated.Rahil Foundation is committed to promoting digital security literacy, and in this comprehensive guide, we will explore essential practices to keep your data secure on both computers and mobile devices.If you are interested in how to keep your data secure, kindly read our page Understanding the Importance of Data Security.`,
     imgurl: "https://cdn.ttgtmedia.com/rms/onlineimages/what_is_a_blog_used_for-f_mobile.png",
-    videoUrl: "https://www.youtube.com/embed/your_video_id", // Replace with your actual video URL
+    // videoUrl: "https://www.youtube.com/embed/your_video_id", // Replace with your actual video URL
     relatedBlogs: [ 1, 3 ],
   },
   {

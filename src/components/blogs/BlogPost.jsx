@@ -55,7 +55,7 @@ const BlogPost = ( { post } ) => {
 
       <BlogVideo videoUrl={post.videoUrl} />
 
-
+    
     </div>
   );
 };

@@ -7,12 +7,12 @@ const GoogleMap = ({ apiKey, location }) => {
     <div>
       <iframe
         title="Google Map"
-        width="400"
-        height="350"
+
         frameBorder="0"
         style={{ border: 0 }}
         src={mapUrl}
-        allowFullScreen
+              allowFullScreen
+              className='lg:w-96 lg:h-72  lg:ml-0 ml-10 lg:mt-0 mt-10'
       ></iframe>
     </div>
   );
