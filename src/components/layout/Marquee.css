@@ -1,0 +1,32 @@
+.container {
+    position: relative;
+    overflow: hidden;
+    height: 100px;
+    /* Set the height as needed */
+}
+
+.marquee {
+    overflow: hidden;
+    height: 100%;
+}
+
+.marquee-content {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    animation: marqueeAnimation linear infinite;
+}
+
+.marquee-content-items {
+    margin-bottom: 10px;
+}
+
+@keyframes marqueeAnimation {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-100%);
+    }
+}

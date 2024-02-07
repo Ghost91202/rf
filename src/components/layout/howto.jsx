@@ -3,10 +3,12 @@ import how from "../../assets/donation.jpg"
 import BUtton from '../BUtton'
 import { Link } from 'react-router-dom';
 import Supports from "../../assets/supports.jpg"
+import Slider from "../../pages/slidingonscroll"
 const howto = () => {
   return (
     <div className='flex lg:flex-row flex-col w-screen h-auto overflow-hidden gap-5'>
-      <img src={Supports} alt="rahil foundation" className='xl:w-1/3 lg:h-auto h-96' />
+      <Slider Name3={<img src={Supports} alt="rahil foundation" className=' h-full mt-20' />}/>
+
       <div className='flex flex-col gap-3 p-10'>
         <h1 className='font-bold lg:text-6xl border-b-2 border-black pb-4'>How To Support?</h1>
         <div className='lg:grid lg:grid-flow-col  lg:grid-cols-2'>
@@ -21,7 +23,8 @@ const howto = () => {
                 </svg>
               </Link>                      </div>
           </div>
-          <img src={how} alt="rahil foundation" className='hidden lg:flex' />
+          <Slider Name4={   <img src={how} alt="rahil foundation" className='hidden lg:flex' />}/>
+
         </div>
       </div>
     </div>

@@ -1,0 +1,39 @@
+.onscroll {
+    box-sizing: border-box;
+
+
+
+}
+
+
+
+.onscroll span {
+    display: block;
+    transform: translateX(-100px);
+    opacity: 0;
+}
+.onscroll2 {
+    box-sizing: border-box;
+}
+.onscroll2  span{
+    display: block;
+    transform: translateX(+100px);
+    opacity: 0;
+}
+.onscroll3 {
+    height: auto;
+    width: auto;
+}
+.onscroll3  span{
+    display: block;
+    transform: translateX(+100px);
+    opacity: 0;
+}
+.onscroll4 {
+    box-sizing: border-box;
+}
+.onscroll4  span{
+    display: block;
+    transform: translateX(+100px);
+    opacity: 0;
+}

@@ -1,0 +1,25 @@
+.container {
+    max-width: 800px;
+    margin: 0px auto;
+}
+
+
+#hero-image-wrapper {
+    height: 50vh;
+}
+
+#list {
+    list-style: none;
+    font-weight: 600;
+    font-size: 3rem;
+    margin: 0px auto;
+}
+
+#list li {
+    display: inline;
+    opacity: 0.15;
+}
+
+#list li:first-child {
+    opacity: 1;
+}

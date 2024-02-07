@@ -14,7 +14,7 @@ import Navbar from "./pages/navbar"
 const Blog2 = lazy(() => import("./components/blogs/blog2"));
 
 const Team = lazy(() => import("./components/layout/Team"));
-const Navbar2 = lazy(() => import("./pages/navbar"));
+const Navbar2 = lazy(() => import("./components/layout/navbar3"));
 
 const BlogForm = lazy(() => import('./components/blogs/contentpost.jsx'));
 const Contact = lazy(() => import("./components/layout/contactUs.jsx"));

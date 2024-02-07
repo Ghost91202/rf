@@ -1,8 +1,10 @@
 import React, { lazy, Suspense } from 'react';
 
 
-
 const Testi = lazy( () => import( '../components/layout/testi.jsx' ) );
+const Trayslider = lazy( () => import( '../components/layout/slidingtray.jsx' ) );
+
+const Animtext = lazy( () => import( '../components/layout/animatedtext.jsx' ) );
 
 const Cards = lazy( () => import( '../components/layout/cards.jsx' ) );
 const Scroll = lazy( () => import( '../components/layout/scroll.jsx' ) );
@@ -17,12 +19,14 @@ const Newslatter = lazy( () => import( './newslatter.jsx' ) );
 const Footer = lazy( () => import( './footer.jsx' ) );
 const Faq = lazy( () => import( '../components/layout/faq.jsx' ) );
 const Mission = lazy( () => import( '../components/layout/misson.jsx' ) );
+const Cards2 = lazy( () => import( '../components/layout/Cards2.jsx' ) );
 const Project = lazy( () => import( '../components/layout/project.jsx' ) );
+
+
 const Home = () => {
   return (
     <div className='w-screen overflow-x-hidden'>
       <Suspense fallback={<div>Loading...</div>}>
-
         <Carousel />
         <Services />
         <Cyber/>
@@ -32,10 +36,9 @@ const Home = () => {
         <Project />
         <News />
         <Testi />
-        {/* <Cards/> */}
+        {/* <Cards2 /> */}
         {/* <Scroll/> */}
         <Faq />
-        {/* <Newslatter /> */}
         <Footer />
       </Suspense>
     </div>

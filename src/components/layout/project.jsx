@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import project1 from "../../assets/pro.png"
+import Slider from "../../pages/slidingonscroll"
 const project = () => {
   return (
       <div>
@@ -22,8 +23,9 @@ crimes an hour.
                   </p>
                   <Link className='border border-white p-3 text-center lg:text-lg font-bold hover:bg-white  hover:text-orange-500'> Read more </Link>
         </div>
-         <div className=' justify-center  items-center lg:flex hidden'>
-                <img src={project1} alt="foundation" className='lg:w-3/4 rounded-2xl'/>
+        <div className=' justify-center  items-center lg:flex hidden'>
+          <Slider Name2={  <img src={project1} alt="foundation" className='lg:w-3/4 rounded-2xl'/>}/>
+
               </div>
           </div>
     </div>

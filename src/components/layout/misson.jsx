@@ -2,15 +2,20 @@ import React from 'react'
 import Mimg from "../../assets/ourmission.png"
 import { Button } from 'flowbite-react'
 import { Link } from 'react-router-dom'
+import Slider from "../../pages/slidingonscroll"
+
 const misson = () => {
     return (
         <div>
             <div className='flex lg:flex-row flex-col lg:mb-10 lg:h-auto p-5 lg:p-20 '>
                 <div className=' lg:w-2/5'>
-                    <img src={Mimg} alt="foundation" className=' w-auto h-auto' />
+                    <Slider Name={                    <img src={Mimg} alt="foundation" className=' w-auto h-auto' />
+}/>
                 </div>
+
                 <div className=' lg:w-3/5 w-full p-10 gap-5 flex flex-col'>
-                  <div className=' gap-5 lg:gap-20 flex flex-col'>  <h1 className='lg:text-6xl text-2xl font-bold '>
+                    <div className=' gap-5 lg:gap-20 flex flex-col '>
+                        <h1 className='lg:text-6xl text-2xl font-bold '>
                         <span className='text-orange-500'>OUR MISSION: </span>
                         TO CHANGE THE LIFE OF WHO HAVE NO HOPE
                     </h1>
