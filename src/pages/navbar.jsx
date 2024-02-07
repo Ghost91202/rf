@@ -7,31 +7,180 @@ import Signup from "./signup"
 import { IoIosMail } from "react-icons/io";
 import { CiHeart } from "react-icons/ci";
 import { Helmet } from 'react-helmet';
-
+import React, { useEffect } from 'react';
 import { FaHandHoldingHeart } from "react-icons/fa";
-
+import "../components/layout/Navbar.css"
 import { FaInstagram, FaFacebook, FaYoutube, FaPhone } from "react-icons/fa6";
 
 export default function Example( { currentPage } ) {
   const [ navbarOpen, setNavbarOpen ] = useState( false );
 
-  const navigation = [
-    { name: 'Home', to: '/', current: currentPage === 'Home' },
-    { name: 'About', to: '/about', current: currentPage === 'About' },
-    { name: 'Team', to: '/team', current: currentPage === 'Team' },
-    { name: 'Blog', to: '/blog', current: currentPage === 'Blog  ' },
-    { name: 'Contact', to: '/contact', current: currentPage === 'Contact' },
-  ];
-
-  const classNames = ( ...classes ) => {
-    return classes.filter( Boolean ).join( ' ' );
+  // Path constants
+  const PATH = {
+    closeToggler: ".toggler-close",
+    expandableNav: ".main-nav__expandable",
+    navItem: ".main-nav__item",
+    openToggler: ".toggler-open"
   };
+
+  // Helper function to edit data attribute
+  const editDataAttr = ( elem, dataAttr, newVal ) => {
+    elem.dataset[ dataAttr ] = newVal;
+  };
+
+  // Helper function to set data attributes to navigation elements
+  const setDataAtrsToNavElems = () => {
+    const navElems = Array.from( document.querySelectorAll( PATH.navItem ) );
+
+    navElems.forEach( ( elem, index ) => {
+      editDataAttr( elem, "addText", `0${ index + 1 }` );
+    } );
+  };
+
+  useEffect( () => {
+    setDataAtrsToNavElems();
+
+    // Event listener for opening and closing navigation
+    const handleClick = ( e ) => {
+      const target = e.target;
+
+      if ( target.closest( PATH.openToggler ) ) {
+        const nav = document.querySelector( PATH.expandableNav );
+        nav.classList.add( "js-open" );
+      }
+
+      if ( target.closest( PATH.closeToggler ) ) {
+        const nav = document.querySelector( PATH.expandableNav );
+        nav.classList.remove( "js-open" );
+      }
+    };
+
+    document.body.addEventListener( "click", handleClick );
+
+    // Cleanup event listener on component unmount
+    return () => {
+      document.body.removeEventListener( "click", handleClick );
+    };
+  }, [] );
   return (
     <div className='z-999'>
+      <nav className="main-nav  lg:hidden flex pr-10">
+        <div className="container">
+          <div className="main-nav__inner">
+            {/* Logo block */}
+            <Link to="/">
+              <img
+                className="h-20 md:h-40 lg:h-28  w-auto  "
+                src={Logo}
+                alt="rahil foundation logo"
+              />
+            </Link>
+            {/* Nav open button */}
+            <button className="main-nav__toggler toggler-open " type="button" title="Open Menu">
+              <div className="toggler-open__bar"></div>
+              <div className="toggler-open__bar"></div>
+              <div className="toggler-open__bar"></div>
+            </button>
+            {/* Nav expandable area */}
+            <div className="main-nav__expandable ">
+              <div className="main-nav__expandable-inner">
+                <div className="container">
+                  <div className="main-nav__expandable-content">
+                    {/* Nav close btn */}
+                    <button className="main-nav__toggler toggler-close " type="button" title="Close Menu"></button>
+                    {/* Nav links list */}
+                    <ul className="main-nav__list p-4 ">
+                      <li className="main-nav__item" data-add-text="data-add-text">
 
+                        <nav class="navi">
+
+                          <label for="touch"><span class="spandp">About</span></label>
+                          <input type="checkbox" id="touch" />
+
+                          <ul class="slide">
+                            <Link
+                              to="/about"
+                              className="block hover:underline text-orange-500 px-4 py-2 text-sm  hover:bg-gray-100"
+                              role="menuitem"
+                            >
+                              Who we are
+                            </Link>
+                            <Link
+                              to="/what_we_do"
+                              className="block hover:underline text-orange-500 px-4 py-2 text-sm  hover:bg-gray-100"
+                              role="menuitem"
+                            >
+                              what we do
+                            </Link>
+                            <Link
+                              to="#"
+                              className="block hover:underline text-orange-500 px-4 py-2 text-sm  hover:bg-gray-100"
+                              role="menuitem"
+                            >
+                              Director's
+                            </Link>
+                            <Link
+                              to="#"
+                              className="block hover:underline text-orange-500 px-4 py-2 text-sm  hover:bg-gray-100"
+                              role="menuitem"
+                            >
+                              Our location
+                            </Link>
+
+                          </ul>
+
+                        </nav>
+                      </li>
+                      <li className="main-nav__item" data-add-text="data-add-text">
+                          <nav class="navi">
+
+                          <label for="touch1"><span class="spandp1">Services</span></label>
+                          <input type="checkbox" id="touch1" />
+
+                          <ul class="slide1">
+                            <Link
+                              to="#"
+                              className="block px-4 py-2 text-sm text-orange-500  hover:bg-gray-100"
+                              role="menuitem"
+                            >
+                              Projects  and activities
+                            </Link>
+                            <Link
+                              to="#"
+                              className="block px-4 py-2 text-sm text-orange-500  hover:bg-gray-100"
+                              role="menuitem"
+                            >
+                              Calendars(Events)
+                            </Link>
+
+                          </ul>
+
+                        </nav>
+                      </li>
+                      <li className="main-nav__item" data-add-text="data-add-text">
+                          <nav class="navi">
+                          <label for="touch1"><span class="spandp1">Blogs & News</span></label>
+                          <input type="checkbox" id="touch1" />
+                        </nav>
+                      </li>
+
+                      {/* Add more list items as needed */}
+                    </ul>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </nav>
       <nav className="relative flex-wrap items-center hidden md:flex overflow-hidden w-full  pr-10   lg:w-full md:w-full sm:w-full sm:overflow-hidden md:overflow-hidden justify-between  py-2 bg-orange-500">
         <div className="container  mx-auto flex flex-wrap items-center justify-between">
           <div className="w-screen relative flex flex-wrap justify-between lg:w-auto lg:static lg:block lg:justify-start">
+
             <div className="flex w-full gap-1 text-xs md:text-md xl:text-md md:gap-5">
               <Link
                 className="leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white"
@@ -121,15 +270,7 @@ export default function Example( { currentPage } ) {
               <div className="relative flex h-20  items-center justify-center md:justify-between sm:justify-between">
                 <div className="absolute inset-y-0 left-0 flex  items-center sm:hidden">
                   {/* Mobile menu button*/}
-                  <Disclosure.Button className="relative inline-flex items-center justify-center p-2 text-gray-900 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
-                    <span className="absolute -inset-0.5" />
-                    <span className="sr-only">Open main menu</span>
-                    {open ? (
-                      <HiX className="block h-6 w-6" aria-hidden="true" />
-                    ) : (
-                      <HiMenu className="block h-6 w-6" aria-hidden="true" />
-                    )}
-                  </Disclosure.Button>
+
                 </div>
 
                 <div className="flex   justify-center ml-40  md:ml-1 items-center">
@@ -313,23 +454,6 @@ export default function Example( { currentPage } ) {
               </div>
             </div>
 
-         <Disclosure.Panel className="sm:hidden">
-                  <div className="space-y-1 px-2 pb-3 pt-2">
-                    {navigation.map((item) => (
-                      <Link
-                        key={item.name}
-                        to={item.to}
-                        className={classNames(
-                          item.current ? 'bg-gray-900 text-white' : 'text-gray-700 hover:bg-gray-700 hover:text-white',
-                          'block px-3 py-2 text-base font-medium'
-                        )}
-                        aria-current={item.current ? 'page' : undefined}
-                      >
-                        {item.name}
-                      </Link>
-                    ))}
-                  </div>
-                </Disclosure.Panel>
           </>
         )}
       </Disclosure>

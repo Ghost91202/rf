@@ -5,6 +5,7 @@ import Blog from "./components/blogs/index.jsx"
 import About from "./components/layout/Aboutpage"
 import BlogList from "./components/blogs/bloglist.jsx"
 import Cybercrime from "./pages/cyberscrime"
+import Map from "./components/layout/map"
 import Projects from "./pages/Projects.jsx"
 import "./App.css"
 import Who from "./pages/who"
@@ -14,7 +15,7 @@ import Navbar from "./pages/navbar"
 const Blog2 = lazy(() => import("./components/blogs/blog2"));
 
 const Team = lazy(() => import("./components/layout/Team"));
-const Navbar2 = lazy(() => import("./components/layout/navbar3"));
+const Navbar2 = lazy(() => import("./components/layout/navbar2"));
 
 const BlogForm = lazy(() => import('./components/blogs/contentpost.jsx'));
 const Contact = lazy(() => import("./components/layout/contactUs.jsx"));
@@ -43,6 +44,7 @@ const App = () => {
         <Route path="/blog/:id" element={<Suspense fallback={<Loading />}><BlogList /></Suspense>} />
         <Route path="/blog/phishing_attacks" element={<Suspense fallback={<Loading />}><Blog2 /></Suspense>} />
         <Route path="/About" element={<About />} />
+        <Route path="/Map" element={<Map />} />
         <Route path="/what_we_do" element={<Who />} />
         <Route path="/CyberCrime" element={<Cybercrime />} />
         <Route path="/projects" element={<Cybercrime />} />

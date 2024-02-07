@@ -18,9 +18,23 @@ const BlogPost = ( { post } ) => {
 
       <h2 className="text-2xl font-semibold mb-4">{post.Heading3}</h2>
       <h2 className="text-gray-700  mb-4">{post.content1}</h2>
+      <h2 className="text-2xl font-semibold mb-4">{post. Heading41}</h2>
+      <h2 className="text-gray-700  mb-4">{post.content21}</h2>
+      <h2 className="text-2xl font-semibold mb-4">{post.Heading42}</h2>
+      <h2 className="text-gray-700  mb-4">{post. content32}</h2>
 
       <h2 className="text-2xl font-semibold mb-4">{post.Heading4}</h2>
       <p className="text-gray-700 mb-4">{post.para5}</p>
+      <h2 className="text-2xl font-semibold mb-4">{post.Heading51}</h2>
+      <p className="text-gray-700 mb-4">{post. content41}</p>
+      <h2 className="text-2xl font-semibold mb-4">{post.Heading61}</h2>
+      <p className="text-gray-700 mb-4">{post. content51}</p>
+      <h2 className="text-2xl font-semibold mb-4">{post.Heading71}</h2>
+      <p className="text-gray-700 mb-4">{post. content61}</p>
+      <h2 className="text-2xl font-semibold mb-4">{post.Heading81}</h2>
+      <p className="text-gray-700 mb-4">{post. content71}</p>
+      <h2 className="text-2xl font-semibold mb-4">{post.Heading91}</h2>
+      <p className="text-gray-700 mb-4">{post. content81}</p>
 
       <h2 className="text-2xl font-semibold mb-4">{post.Heading5}</h2>
       <p className="text-black-700 font-semibold mb-4">{post.list1}</p>
@@ -38,7 +52,7 @@ const BlogPost = ( { post } ) => {
       <p className="text-black-700 font-semibold mb-4">{post.list5}</p>
       <p className="text-gray-700 mb-4">{post.content6}</p>
 
-     
+
       <BlogVideo videoUrl={post.videoUrl} />
 
 

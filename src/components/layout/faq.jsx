@@ -62,7 +62,7 @@ const AccordionItem = ( { header, text } ) => {
 
 const Accordion = () => {
   return (
-  <section className="w-full relative overflow-hidden">
+  <section className="w-full relative overflow-hidden" id="faq">
     <div className="grid grid-flow-row grid-cols-1 gap-10 lg:gap-0 lg:mb-0 mb-10 md:grid-cols-2 p-10 md:p-10 lg:p-20 lg:h-auto">
         <div className="flex flex-col justify-between">
             <h1 className="text-4xl md:text-5xl lg:text-7xl font-semibold">
